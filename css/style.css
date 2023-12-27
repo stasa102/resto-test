@@ -2,13 +2,9 @@
   --orange: #f34949;
   --lighterGrey: #565656;
   --white: #ffffff;
-  --kristiFont: "Kristi", cursive;
+  /* --kristiFont: "Kristi", cursive; */
   --eczarFont: "Eczar", serif;
   --styleScriptFont: "Style Script", cursive;
-}
-
-body {
-  font-size: 3.2vw;
 }
 
 /* Section: Navbar */
@@ -26,11 +22,23 @@ body {
   flex-grow: 0;
 }
 
-.nav-link {
+.navbar-expand-md {
+  justify-content: space-between;
+}
+
+ul {
+  display: inline;
+}
+a.nav-link {
+  padding: 0;
+  margin-top: 5px;
+  display: inline;
   color: var(--lighterGrey);
 }
-.nav-link:hover {
+a.nav-link:hover {
   color: var(--orange);
+  border-bottom: 1px solid var(--orange);
+  border-top: 1px solid var(--orange);
 }
 
 .nav-item {
@@ -40,14 +48,9 @@ body {
   border: 1px solid transparent;
   margin: 0px 5px;
 }
-.nav-item:hover {
-  border-bottom: 1px solid var(--orange);
-  border-top: 1px solid var(--orange);
-}
 
 .navbar-nav {
   font-size: large;
-  padding-right: 20px;
   min-height: 100%;
   text-align: center;
   z-index: 100;
@@ -86,17 +89,7 @@ body {
   border-radius: 100%;
 }
 
-.carousel {
-  position: relative;
-  filter: drop-shadow(20);
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
-}
-
 div.col-8 {
-  /* top: 50%; */
   width: 35%;
 }
 
@@ -112,7 +105,7 @@ div.col-8 {
 
 .heading {
   font-family: var(--styleScriptFont);
-  font-size: calc(1.5em + 1vw);
+  font-size: calc(3em + 1vw);
   font-weight: 600;
   top: 45%;
   transform: translate(-50%, -50%);
@@ -143,7 +136,6 @@ div.col-8 {
 }
 
 .menu-description {
-  font-size: smaller;
   font-style: italic;
   color: #a1a0a0;
 }
@@ -195,6 +187,7 @@ div.col-8 {
 .menu-course-btn {
   font-size: small;
   letter-spacing: 1px;
+  font-family: var(--eczarFont) !important;
   color: var(--white);
   background-color: var(--orange);
   border: 0;
@@ -207,8 +200,74 @@ div.row {
   justify-content: center;
 }
 
+/* Featured-dishes section - card */
+
+.featured.carousel-indicators {
+  bottom: 100%;
+  position: relative;
+  justify-content: flex-end;
+  margin: 20px 0;
+  left: 1.9%;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+div.col-3 {
+  right: 30px;
+  top: 20%;
+  position: relative;
+}
+
+.line-hr {
+  display: inline;
+  position: relative;
+  width: 20%;
+  top: 19px;
+}
+
+div.card-body {
+  padding: 10px 0;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  margin: 0;
+  width: calc(100% / 4);
+  --bs-card-border-radius: 0;
+  --bs-card-border-color: transparent;
+}
+
+.img-wrapper {
+  height: calc(100% / 2);
+}
+
+.img-wrapper img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-wrapper {
+  justify-content: space-evenly;
+}
+
+.card-img-top {
+  border-radius: 0;
+}
+
+.featured-dishes-section {
+  margin-top: 5%;
+  font-family: var(--eczarFont);
+  color: var(--lighterGrey);
+}
+
 /* Responsive */
-@media screen and (min-width: 0px) and (max-width: 576px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   .menu-section {
     columns: 1;
   }
@@ -216,11 +275,14 @@ div.row {
   .navbar-brand {
     font-size: 30px;
   }
-  /* 
+  .heading {
+    font-size: calc(2.2em + 1vw);
+  }
   .description {
+    font-size: calc(0.3em + 1vw);
+
     word-wrap: nowrap;
-    top: 65%;
-  } */
+  }
 
   .menu-course-btn {
     font-size: 12px;
@@ -230,10 +292,14 @@ div.row {
   .down {
     left: 10px;
   }
-}
-@media screen and (min-width: 577px) and (max-width: 786px) {
-  .description {
-    font-size: 20px;
-    top: 65%;
+
+  .img-wrapper {
+    height: calc(100% / 2vh);
+  }
+
+  .img-wrapper img {
+    height: 100%;
+    object-fit: cover;
+    padding-right: 10px;
   }
 }
