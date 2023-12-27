@@ -1,0 +1,239 @@
+:root {
+  --orange: #f34949;
+  --lighterGrey: #565656;
+  --white: #ffffff;
+  --kristiFont: "Kristi", cursive;
+  --eczarFont: "Eczar", serif;
+  --styleScriptFont: "Style Script", cursive;
+}
+
+body {
+  font-size: 3.2vw;
+}
+
+/* Section: Navbar */
+.navbar-brand {
+  font-family: var(--styleScriptFont);
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: expanded;
+  letter-spacing: 3px;
+  font-size: 50px;
+  color: #424141;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link {
+  color: var(--lighterGrey);
+}
+.nav-link:hover {
+  color: var(--orange);
+}
+
+.nav-item {
+  color: var(--lighterGrey);
+  font-family: var(--eczarFont);
+  padding-left: 0px 10px;
+  border: 1px solid transparent;
+  margin: 0px 5px;
+}
+.nav-item:hover {
+  border-bottom: 1px solid var(--orange);
+  border-top: 1px solid var(--orange);
+}
+
+.navbar-nav {
+  font-size: large;
+  padding-right: 20px;
+  min-height: 100%;
+  text-align: center;
+  z-index: 100;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+/* Section: Carousel */
+.carousel-item {
+  max-width: 100%;
+}
+
+.carousel-section img {
+  border-bottom: 5px solid var(--orange);
+  max-height: 40em;
+  object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: var(--orange);
+}
+
+.carousel-indicators [data-bs-target]:hover {
+  background-color: var(--orange);
+}
+
+.carousel-indicators button {
+  border-radius: 100%;
+}
+
+.carousel {
+  position: relative;
+  filter: drop-shadow(20);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+}
+
+div.col-8 {
+  /* top: 50%; */
+  width: 35%;
+}
+
+.heading,
+.description {
+  position: absolute;
+  left: 50%;
+  color: var(--white);
+  text-shadow: 0.5px 0.5px #000000;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+}
+
+.heading {
+  font-family: var(--styleScriptFont);
+  font-size: calc(1.5em + 1vw);
+  font-weight: 600;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.description {
+  font-family: var(--eczarFont);
+  font-size: calc(0.2em + 1vw);
+  top: 60%;
+}
+
+/* Section: Menu */
+.the-menu {
+  padding-top: 0 !important;
+}
+.menu {
+  font-family: var(--eczarFont);
+  font-size: large;
+  padding: 15px 20px 20px 20px;
+  color: var(--white);
+  background-color: var(--orange);
+  mask-clip: content-box;
+  position: absolute;
+}
+
+.menu-courses {
+  margin-top: 50px;
+}
+
+.menu-description {
+  font-size: smaller;
+  font-style: italic;
+  color: #a1a0a0;
+}
+
+.menu-course-info,
+.menu-price {
+  margin-top: 50px;
+  padding-left: 50px;
+  font-family: var(--eczarFont);
+  color: var(--lighterGrey);
+}
+
+.d-flex {
+  color: var(--lighterGrey);
+  align-items: center;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.line {
+  position: relative;
+  top: 45px;
+}
+
+.triangle {
+  border-left: 85px solid transparent;
+  border-right: 85px solid transparent;
+  border-bottom: 15px solid var(--white);
+  position: relative;
+  top: 45px;
+  overflow: hidden;
+}
+
+.arrow {
+  border: solid var(--white);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  position: relative;
+  bottom: 2px;
+  left: 6px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.menu-course-btn {
+  font-size: small;
+  letter-spacing: 1px;
+  color: var(--white);
+  background-color: var(--orange);
+  border: 0;
+  padding: 7px 20px 7px;
+  max-width: fit-content;
+  margin-top: 50px;
+}
+
+div.row {
+  justify-content: center;
+}
+
+/* Responsive */
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .menu-section {
+    columns: 1;
+  }
+
+  .navbar-brand {
+    font-size: 30px;
+  }
+  /* 
+  .description {
+    word-wrap: nowrap;
+    top: 65%;
+  } */
+
+  .menu-course-btn {
+    font-size: 12px;
+    font-family: var(--eczarFont);
+  }
+
+  .down {
+    left: 10px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 786px) {
+  .description {
+    font-size: 20px;
+    top: 65%;
+  }
+}
