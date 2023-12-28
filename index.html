@@ -38,7 +38,7 @@
   </head>
   <body>
     <div class="">
-      <header class="row">
+      <header class="container">
         <nav class="navbar navbar-expand-md navbar-light bg-light px-5 py-2">
           <a class="navbar-brand" href="#"
             >Resto<span style="color: #f34949">..</span></a
@@ -193,86 +193,86 @@
           <span class="triangle"></span>
         </div>
         <div class="row menu-courses">
-          <div class="col">
+          <div class="col-xs-1 col-xxl-6">
             <div class="row">
-              <div class="menu-course-info col-5">
+              <div class="menu-course-info col-6">
                 <h5 class="menu-heading">Voluptate cillum fugiat.</h5>
                 <p class="menu-description">
                   Cheese, Tomato, Mushroom, Onions.
                 </p>
               </div>
-              <div class="line col-5"><hr /></div>
+              <div class="line col-4"><hr /></div>
               <div class="menu-price col-2">$50</div>
             </div>
             <div class="row">
-              <div class="menu-course-info col-5">
+              <div class="menu-course-info col-6">
                 <h5 class="menu-heading">Metus varius laoreet.</h5>
                 <p class="menu-description">
                   Chicken, Mozzarella Cheese, Onions.
                 </p>
               </div>
-              <div class="line col-5"><hr /></div>
+              <div class="line col-4"><hr /></div>
               <div class="menu-price col-2">$62</div>
             </div>
             <div class="row">
-              <div class="menu-course-info col-5">
+              <div class="menu-course-info col-6">
                 <h5 class="menu-heading">Donec sodales magna.</h5>
                 <p class="menu-description">Tuna, Sweetcorn, Cheese.</p>
               </div>
-              <div class="line col-5"><hr /></div>
+              <div class="line col-4"><hr /></div>
               <div class="menu-price col-2">$25</div>
             </div>
             <div class="row">
-              <div class="menu-course-info col-5">
+              <div class="menu-course-info col-6">
                 <h5 class="menu-heading">Saugue velit curus.</h5>
                 <p class="menu-description">Pinneapple, Minced Beef, Cheese.</p>
               </div>
-              <div class="line col-5"><hr /></div>
+              <div class="line col-4"><hr /></div>
               <div class="menu-price col-2">$30</div>
             </div>
           </div>
-          <div class="col-xs-1 col-xl-6">
+          <div class="col-xs-1 col-xxl-6">
             <div class="row">
-              <div class="menu-course-info col-5">
+              <div class="menu-course-info col-6">
                 <h5 class="menu-heading">Arcu pede enim justo.</h5>
                 <p class="menu-description">Tuna, Sweetcorn, Cheese.</p>
               </div>
-              <div class="line col-5"><hr /></div>
+              <div class="line col-4"><hr /></div>
               <div class="menu-price col-2">$45</div>
             </div>
             <div class="row">
-              <div class="menu-course-info col-5">
+              <div class="menu-course-info col-6">
                 <h5 class="menu-heading">Cras dapibussemper nisi.</h5>
                 <p class="menu-description">
                   Pinneapple, Minced Beef, Cheese..
                 </p>
               </div>
-              <div class="line col-5"><hr /></div>
+              <div class="line col-4"><hr /></div>
               <div class="menu-price col-2">$32</div>
             </div>
             <div class="row">
-              <div class="menu-course-info col-5">
+              <div class="menu-course-info col-6">
                 <h5 class="menu-heading">Quam semper libero.</h5>
                 <p class="menu-description">
                   Cheese, tomato, mushroom, onions.
                 </p>
               </div>
-              <div class="line col-5"><hr /></div>
+              <div class="line col-4"><hr /></div>
               <div class="menu-price col-2">$15</div>
             </div>
             <div class="row">
-              <div class="menu-course-info col-5">
+              <div class="menu-course-info col-6">
                 <h5 class="menu-heading">Nam eget dui Etiam.</h5>
                 <p class="menu-description">
                   Chicken, Mozzarella Cheese, Onions.
                 </p>
               </div>
-              <div class="line col-5"><hr /></div>
+              <div class="line col-4"><hr /></div>
               <div class="menu-price col-2">$35</div>
             </div>
           </div>
         </div>
-        <div class="col-xs-14">
+        <div class="menu-btn col-xs-12">
           <div class="row">
             <button class="menu-course-btn">
               View all menu | <i class="arrow down"></i>
@@ -283,42 +283,44 @@
       <section class="featured-dishes-section container">
         <div
           id="carouselIndicators"
-          class="featured carousel slide carousel-fade row"
+          class="featured carousel slide carousel-fade container"
           data-bs-ride="carousel"
           data-bs-interval="50000"
         >
-          <div class="col-3"><h4>FEATURED DISHES</h4></div>
-          <div class="col-3 line-hr"><hr /></div>
-          <div class="featured carousel-indicators col-6">
-            <button
-              type="button"
-              data-bs-target="#carouselIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-label="Slide 1"
-              aria-current="true"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselIndicators"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
+          <div class="subheading-wrapper">
+            <div><h4>FEATURED DISHES</h4></div>
+            <div class="line-hr"><hr /"></div>
+            <div class="featured carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-label="Slide 1"
+                aria-current="true"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
           </div>
           <div class="carousel-inner flex-row">
-            <div class="carousel-item active">
+            <div class="featured carousel-item active">
               <div class="card-wrapper">
                 <div class="card me-5">
                   <div class="img-wrapper">
@@ -329,25 +331,33 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Fugiat nulla sint</p>
+                      <span class="course-space"></span>
+                      <span class="course-price">$30</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>24 people love this</span>
                     </div>
                   </div>
                 </div>
@@ -360,25 +370,32 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="curse-name">Daute irure dolor</p>
+                      <span class="course-price">$24</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>2 people love this</span>
                     </div>
                   </div>
                 </div>
@@ -391,25 +408,32 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Saugue velit curus</p>
+                      <span class="course-price">$30</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>1 people likes this</span>
                     </div>
                   </div>
                 </div>
@@ -422,31 +446,38 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Arcu pede enim justo</p>
+                      <span class="course-price">$45</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>97 people likes this</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="featured carousel-item">
               <div class="card-wrapper">
                 <div class="card me-5">
                   <div class="img-wrapper">
@@ -457,25 +488,32 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Cras dapibussemper</p>
+                      <span class="course-price">$32</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>137 people likes this</span>
                     </div>
                   </div>
                 </div>
@@ -488,25 +526,32 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Quam semper libero</p>
+                      <span class="course-price">$15</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>4 people likes this</span>
                     </div>
                   </div>
                 </div>
@@ -519,25 +564,32 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Nam eget dui Etiam</p>
+                      <span class="course-price">$35</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>13 people likes this</span>
                     </div>
                   </div>
                 </div>
@@ -550,25 +602,32 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Saugue velit curus</p>
+                      <span class="course-price">$86</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>29 people likes this</span>
                     </div>
                   </div>
                 </div>
@@ -585,25 +644,32 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Donec sodales</p>
+                      <span class="course-price">$12</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>66 people likes this</span>
                     </div>
                   </div>
                 </div>
@@ -616,25 +682,32 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Velit curus</p>
+                      <span class="course-price">$150</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>101 people likes this</span>
                     </div>
                   </div>
                 </div>
@@ -647,25 +720,32 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Neque porro quisquam</p>
+                      <span class="course-price">$70</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>77 people likes this</span>
                     </div>
                   </div>
                 </div>
@@ -678,25 +758,32 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Sed ut perspiciatis</p>
+                      <span class="course-price">$23</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>11 people likes this</span>
                     </div>
                   </div>
                 </div>
@@ -713,25 +800,32 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Sed ut autem</p>
+                      <span class="course-price">$9</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>49 people likes this</span>
                     </div>
                   </div>
                 </div>
@@ -744,25 +838,32 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">At vero eos et</p>
+                      <span class="course-price">$10</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>18 people likes this</span>
                     </div>
                   </div>
                 </div>
@@ -775,25 +876,32 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Nam libero tempore</p>
+                      <span class="course-price">$90</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
-                        ><svg
+                    <div class="course-likes">
+                      <span id="heart">
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-heart"
+                          class="heart"
                           viewBox="0 0 16 16"
                         >
                           <path
+                            class="heart-outline"
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-                          /></svg
-                      ></span>
-                      <span class="col-10">24 people likes this</span>
+                          />
+                          <path
+                            class="heart-fill"
+                            fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                          />
+                        </svg>
+                      </span>
+                      <span>85 people likes this</span>
                     </div>
                   </div>
                 </div>
@@ -806,17 +914,16 @@
                     />
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <p class="col-9">Naziv Jela</p>
-                      <span class="col-3">$50</span>
+                    <div class="course-info">
+                      <p class="course-name">Et harum quidem rerum</p>
+                      <span class="course-price">$55</span>
                     </div>
-                    <div class="row">
-                      <span class="col-2" style="cursor: pointer"
+                    <div class="course-likes">
+                      <span style="cursor: pointer"
                         ><svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
-                          fill="currentColor"
                           class="bi bi-heart"
                           viewBox="0 0 16 16"
                         >
@@ -824,7 +931,7 @@
                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
                           /></svg
                       ></span>
-                      <span class="col-10">24 people likes this</span>
+                      <span>7 people likes this</span>
                     </div>
                   </div>
                 </div>
@@ -833,7 +940,7 @@
           </div>
         </div>
       </section>
-      <section>About Us</section>
+      <section class="about-us-section container"></section>
       <section>Gallery</section>
       <footer>Footer</footer>
     </div>

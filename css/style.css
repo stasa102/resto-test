@@ -2,9 +2,13 @@
   --orange: #f34949;
   --lighterGrey: #565656;
   --white: #ffffff;
-  /* --kristiFont: "Kristi", cursive; */
   --eczarFont: "Eczar", serif;
   --styleScriptFont: "Style Script", cursive;
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: transparent !important;
 }
 
 /* Section: Navbar */
@@ -78,7 +82,13 @@ a.nav-link:hover {
 .carousel-indicators [data-bs-target] {
   width: 10px;
   height: 10px;
-  background-color: var(--orange);
+  background-color: #c3c3c3;
+  opacity: 0.5;
+}
+
+.carousel-indicators .active {
+  background-color: #f34949;
+  opacity: 1;
 }
 
 .carousel-indicators [data-bs-target]:hover {
@@ -133,6 +143,7 @@ div.col-8 {
 
 .menu-courses {
   margin-top: 50px;
+  margin-left: 45px;
 }
 
 .menu-description {
@@ -143,7 +154,6 @@ div.col-8 {
 .menu-course-info,
 .menu-price {
   margin-top: 50px;
-  padding-left: 50px;
   font-family: var(--eczarFont);
   color: var(--lighterGrey);
 }
@@ -196,28 +206,34 @@ div.col-8 {
   margin-top: 50px;
 }
 
+.row {
+  padding-right: 0;
+}
 div.row {
+  width: 100%;
   justify-content: center;
 }
 
 /* Featured-dishes section - card */
 
 .featured.carousel-indicators {
-  bottom: 100%;
+  color: #00000019;
   position: relative;
   justify-content: flex-end;
-  margin: 20px 0;
-  left: 1.9%;
+  margin-right: 0;
+  bottom: 60px;
 }
 
 h4 {
   font-size: 20px;
+  position: relative;
 }
 
-div.col-3 {
-  right: 30px;
-  top: 20%;
+.line-hr hr {
+  width: 200px;
   position: relative;
+  left: 200px;
+  bottom: 50px;
 }
 
 .line-hr {
@@ -227,13 +243,15 @@ div.col-3 {
   top: 19px;
 }
 
-div.card-body {
-  padding: 10px 0;
-}
-
 .card-wrapper {
   display: flex;
   justify-content: space-evenly;
+  padding: 0px 40px;
+  flex: 0 0 auto;
+}
+
+.subheading-wrapper {
+  padding: 0 40px;
 }
 
 .card {
@@ -247,25 +265,63 @@ div.card-body {
   height: calc(100% / 2);
 }
 
-.img-wrapper img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.card-wrapper {
-  justify-content: space-evenly;
-}
-
 .card-img-top {
   border-radius: 0;
+  object-fit: cover;
+  height: 100%;
+  /* width: auto; */
+  overflow: hidden;
 }
 
-.featured-dishes-section {
-  margin-top: 5%;
-  font-family: var(--eczarFont);
+.card-body {
+  padding: 10px 0px;
+  /* flex: 0 0 auto; */
+}
+
+.course-info {
+  color: var(--lighterGrey);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.course-likes {
   color: var(--lighterGrey);
 }
 
+.featured-dishes-section {
+  margin-top: 20%;
+  font-family: var(--eczarFont);
+  color: var(--lighterGrey) !important;
+}
+
+.course-likes span {
+  padding-left: 5px;
+}
+
+/* heart svg */
+
+.heart .heart-fill {
+  /* notice the defined alpha component. you could also use opacity though, of course */
+  fill: #00000000;
+}
+
+.heart .heart-outline {
+  fill: var(--lighterGrey);
+}
+
+.heart .heart-outline,
+.heart .heart-fill {
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+/* this uses the bounding box of the whole svg for hovering, which is perfectly fine for small buttons, but may be slightly problematic for using this svg in a larger size (.heart-fill:hover + .heart-outline should work for that case though) */
+#heart:hover .heart-fill,
+#heart:hover .heart-outline {
+  fill: var(--orange);
+}
 /* Responsive */
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .menu-section {
