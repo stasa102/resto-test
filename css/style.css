@@ -2,8 +2,9 @@
   --orange: #f34949;
   --lighterGrey: #565656;
   --white: #ffffff;
-  --eczarFont: "Eczar", serif;
   --styleScriptFont: "Style Script", cursive;
+  --cormorantFont: "Cormorant", serif;
+  --diphylleiaFont: "Diphylleia", serif;
 }
 
 .bg-light {
@@ -47,7 +48,9 @@ a.nav-link:hover {
 
 .nav-item {
   color: var(--lighterGrey);
-  font-family: var(--eczarFont);
+  font-family: var(--cormorantFont);
+  font-weight: 600;
+  letter-spacing: 2px;
   padding-left: 0px 10px;
   border: 1px solid transparent;
   margin: 0px 5px;
@@ -122,8 +125,9 @@ div.col-8 {
 }
 
 .description {
-  font-family: var(--eczarFont);
-  font-size: calc(0.2em + 1vw);
+  font-family: var(--cormorantFont);
+  font-weight: 600;
+  font-size: calc(0.3em + 1vw);
   top: 60%;
 }
 
@@ -132,7 +136,7 @@ div.col-8 {
   padding-top: 0 !important;
 }
 .menu {
-  font-family: var(--eczarFont);
+  font-family: var(--cormorantFont);
   font-size: large;
   padding: 15px 20px 20px 20px;
   color: var(--white);
@@ -146,6 +150,10 @@ div.col-8 {
   margin-left: 45px;
 }
 
+.menu-heading {
+  font-weight: 600;
+}
+
 .menu-description {
   font-style: italic;
   color: #a1a0a0;
@@ -154,7 +162,7 @@ div.col-8 {
 .menu-course-info,
 .menu-price {
   margin-top: 50px;
-  font-family: var(--eczarFont);
+  font-family: var(--cormorantFont);
   color: var(--lighterGrey);
 }
 
@@ -195,9 +203,10 @@ div.col-8 {
 }
 
 .menu-course-btn {
-  font-size: small;
+  font-size: medium;
+  font-weight: 600;
   letter-spacing: 1px;
-  font-family: var(--eczarFont) !important;
+  font-family: var(--cormorantFont) !important;
   color: var(--white);
   background-color: var(--orange);
   border: 0;
@@ -226,6 +235,7 @@ div.row {
 
 h4 {
   font-size: 20px;
+  font-weight: 600;
   position: relative;
 }
 
@@ -279,6 +289,8 @@ h4 {
 }
 
 .course-info {
+  font-weight: 600;
+  font-size: larger;
   color: var(--lighterGrey);
   display: flex;
   justify-content: space-between;
@@ -291,7 +303,7 @@ h4 {
 
 .featured-dishes-section {
   margin-top: 20%;
-  font-family: var(--eczarFont);
+  font-family: var(--cormorantFont);
   color: var(--lighterGrey) !important;
 }
 
@@ -322,6 +334,77 @@ h4 {
 #heart:hover .heart-outline {
   fill: var(--orange);
 }
+
+/*about-us-section */
+
+.blockquote {
+  font-family: "Special Elite", cursive;
+  color: #777777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline;
+  overflow-wrap: break-word;
+}
+blockquote {
+  font-family: var(--styleScriptFont);
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 1;
+  position: relative;
+  margin: 0px;
+}
+
+blockquote:before,
+blockquote:after {
+  position: absolute;
+  color: #dedede;
+  font-size: 8rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+blockquote:before {
+  content: "“";
+  left: 30px;
+  top: 20px;
+}
+
+blockquote:after {
+  content: "”";
+  top: 10rem;
+  left: 30rem;
+}
+
+cite {
+  display: flex;
+  font-family: var(--diphylleiaFont);
+  line-height: 1.5;
+  position: relative;
+  justify-content: flex-start;
+  align-content: center;
+  top: 2rem;
+  left: 4rem;
+}
+
+.about-us-section {
+  padding: 0px 30px;
+  color: var(--lighterGrey);
+  font-family: var(--cormorantFont);
+}
+
+.heading-about-us.container {
+  padding: 20px 0px 30px 40px;
+}
+
+div.info-about-us.container.row {
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+
+.list.col-sm-12.col-xxl-6 {
+  padding-left: 25px;
+}
 /* Responsive */
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .menu-section {
@@ -336,17 +419,32 @@ h4 {
   }
   .description {
     font-size: calc(0.3em + 1vw);
-
     word-wrap: nowrap;
   }
 
   .menu-course-btn {
     font-size: 12px;
-    font-family: var(--eczarFont);
+    font-family: var(--cormorantFont);
+    font-weight: 300;
   }
 
   .down {
     left: 10px;
+  }
+
+  .course-info .course-name,
+  .course-price,
+  .course-likes,
+  .course-likes-num {
+    font-size: calc(0.4em + 1vw);
+  }
+
+  .line-hr hr {
+    width: 20%;
+  }
+
+  .card-wrapper {
+    padding-bottom: 75px;
   }
 
   .img-wrapper {
@@ -357,5 +455,27 @@ h4 {
     height: 100%;
     object-fit: cover;
     padding-right: 10px;
+  }
+
+  cite {
+    left: 0;
+  }
+
+  blockquote:before {
+    content: "“";
+    right: -100px;
+  }
+
+  blockquote:after {
+    content: "”";
+    top: 200px;
+    left: 250px;
+  }
+
+  blockquote:before,
+  blockquote:after {
+    position: absolute;
+    color: #dedede;
+    font-size: 6rem;
   }
 }
