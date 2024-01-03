@@ -67,10 +67,6 @@ a.nav-link:hover {
   border: 0;
 }
 
-.navbar-light .navbar-toggler {
-  border-color: transparent;
-}
-
 /* Section: Carousel */
 .carousel-item {
   max-width: 100%;
@@ -146,7 +142,7 @@ div.col-8 {
 }
 
 .menu-courses {
-  margin-top: 50px;
+  margin-top: 10%;
   margin-left: 45px;
 }
 
@@ -239,18 +235,19 @@ h4 {
   position: relative;
 }
 
-.line-hr hr {
+.featured-dishes-line-hr hr {
   width: 200px;
   position: relative;
-  left: 200px;
+  left: 40px;
   bottom: 50px;
 }
 
-.line-hr {
+.featured-dishes-line-hr {
   display: inline;
   position: relative;
   width: 20%;
   top: 19px;
+  left: 150px;
 }
 
 .card-wrapper {
@@ -302,7 +299,7 @@ h4 {
 }
 
 .featured-dishes-section {
-  margin-top: 20%;
+  margin-top: 10%;
   font-family: var(--cormorantFont);
   color: var(--lighterGrey) !important;
 }
@@ -314,7 +311,6 @@ h4 {
 /* heart svg */
 
 .heart .heart-fill {
-  /* notice the defined alpha component. you could also use opacity though, of course */
   fill: #00000000;
 }
 
@@ -329,9 +325,9 @@ h4 {
   transition-timing-function: ease-in-out;
 }
 
-/* this uses the bounding box of the whole svg for hovering, which is perfectly fine for small buttons, but may be slightly problematic for using this svg in a larger size (.heart-fill:hover + .heart-outline should work for that case though) */
 #heart:hover .heart-fill,
 #heart:hover .heart-outline {
+  cursor: pointer;
   fill: var(--orange);
 }
 
@@ -366,17 +362,15 @@ blockquote:after {
 
 blockquote:before {
   content: "“";
-  left: 30px;
-  top: 20px;
+  position: relative;
 }
 
 blockquote:after {
   content: "”";
-  top: 10rem;
-  left: 30rem;
 }
 
 cite {
+  font-size: calc(0.4em + 1vw);
   display: flex;
   font-family: var(--diphylleiaFont);
   line-height: 1.5;
@@ -384,27 +378,157 @@ cite {
   justify-content: flex-start;
   align-content: center;
   top: 2rem;
-  left: 4rem;
+  left: 5rem;
 }
 
 .about-us-section {
-  padding: 0px 30px;
+  margin-bottom: 5%;
+  padding: 0px 10px;
   color: var(--lighterGrey);
   font-family: var(--cormorantFont);
 }
 
+.about-us-line-hr {
+  position: relative;
+  width: 20%;
+  left: 120px;
+  bottom: 30px;
+}
+
 .heading-about-us.container {
-  padding: 20px 0px 30px 40px;
+  padding: 20px 0px 20px 40px;
 }
 
 div.info-about-us.container.row {
-  padding-left: 40px;
-  padding-bottom: 30px;
+  padding-left: 50px;
+  /* padding-bottom: 30px; */
 }
 
-.list.col-sm-12.col-xxl-6 {
-  padding-left: 25px;
+.list.col-sm-12.col-md-6 {
+  padding-left: 30px;
+  position: relative;
+  bottom: 20px;
 }
+
+.second.col-sm-12.col-md-6 {
+  padding-left: 40px;
+}
+
+/*Gallery section*/
+
+.the-gallery-section {
+  margin-bottom: 10%;
+  margin-top: 5%;
+  padding: 30px;
+  color: var(--lighterGrey);
+  font-family: var(--cormorantFont);
+}
+
+.gallery-hr {
+  position: relative;
+  width: 20%;
+  left: 150px;
+  bottom: 30px;
+}
+
+div.gallery.row {
+  margin-top: 70px;
+  padding: 0 30px 0 50px;
+}
+div.col-xl-4 {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.example-image {
+  height: 30rem;
+}
+
+.h-example-image {
+  height: 15rem;
+}
+
+.example-image,
+.h-example-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-wrapper-first {
+  position: relative;
+}
+
+svg.bi.bi-search {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  display: none;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+}
+
+.img-wrapper:hover,
+.img-wrapper-first:hover {
+  opacity: 1;
+}
+.img-wrapper:hover svg.bi.bi-search,
+.img-wrapper-first:hover svg.bi.bi-search {
+  display: block !important;
+}
+
+/* Back-to-top section */
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 100%;
+  background-color: var(--orange);
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  z-index: 50;
+}
+#scroll-to-top:hover {
+  background-color: #ff6868;
+}
+
+/* Footer */
+
+.footer {
+  padding-bottom: 1%;
+  background-color: #424141;
+  color: #dedede;
+  font-family: var(--cormorantFont);
+}
+
+.brand.footer {
+  font-family: var(--styleScriptFont);
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 3px;
+  font-size: 50px;
+  color: #dedede;
+  text-decoration: none;
+}
+
+div.col-10 {
+  padding-left: 180px;
+}
+
+.pixel-hunt {
+  cursor: pointer;
+}
+
+.list-unstyled.links {
+  cursor: pointer;
+}
+
 /* Responsive */
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .menu-section {
@@ -439,7 +563,9 @@ div.info-about-us.container.row {
     font-size: calc(0.4em + 1vw);
   }
 
-  .line-hr hr {
+  .line-hr hr,
+  .gallery-line hr,
+  .featured-dishes-line-hr hr {
     width: 20%;
   }
 
@@ -454,22 +580,23 @@ div.info-about-us.container.row {
   .img-wrapper img {
     height: 100%;
     object-fit: cover;
-    padding-right: 10px;
   }
 
   cite {
-    left: 0;
+    left: -20px;
+    justify-content: center;
+    font-size: calc(0.4em + 1vw);
   }
 
   blockquote:before {
+    position: absolute;
     content: "“";
-    right: -100px;
   }
 
   blockquote:after {
     content: "”";
-    top: 200px;
-    left: 250px;
+    top: 95px;
+    left: 190px;
   }
 
   blockquote:before,
@@ -477,5 +604,45 @@ div.info-about-us.container.row {
     position: absolute;
     color: #dedede;
     font-size: 6rem;
+  }
+
+  .img-wrapper-first {
+    height: 220px;
+    width: auto;
+    object-fit: fill;
+  }
+
+  footer div.container.row ul li,
+  footer div.container.row div h5 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  footer div.brand-col h5 span & a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div.container.row div h5 {
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.card.me-5 {
+    margin: 0 !important;
+  }
+
+  img.card-img-top {
+    height: 90px;
+  }
+
+  div.subheading-wrapper {
+    height: 70px;
+  }
+
+  div.menu-btn {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
