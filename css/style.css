@@ -183,6 +183,7 @@ div.col-8 {
   overflow: hidden;
 }
 
+/*view all menu btn*/
 .arrow {
   border: solid var(--white);
   border-width: 0 2px 2px 0;
@@ -190,7 +191,7 @@ div.col-8 {
   padding: 3px;
   position: relative;
   bottom: 2px;
-  left: 6px;
+  left: 10px;
 }
 
 .down {
@@ -206,7 +207,7 @@ div.col-8 {
   color: var(--white);
   background-color: var(--orange);
   border: 0;
-  padding: 7px 20px 7px;
+  padding: 7px 20px 7px 10px;
   max-width: fit-content;
   margin-top: 50px;
 }
@@ -531,13 +532,14 @@ div.col-10 {
 
 /* Responsive */
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  .menu-section {
-    columns: 1;
-  }
+  /*Navbar section*/
 
   .navbar-brand {
     font-size: 30px;
   }
+
+  /*Carousel section*/
+
   .heading {
     font-size: calc(2.2em + 1vw);
   }
@@ -546,10 +548,19 @@ div.col-10 {
     word-wrap: nowrap;
   }
 
+  /*Menu section*/
+
+  .menu-section {
+    columns: 1;
+  }
+
+  .menu-section.container {
+    padding-left: 0 !important;
+  }
   .menu-course-btn {
     font-size: 12px;
     font-family: var(--cormorantFont);
-    font-weight: 300;
+    letter-spacing: 2px;
   }
 
   .down {
@@ -589,14 +600,13 @@ div.col-10 {
   }
 
   blockquote:before {
-    position: absolute;
     content: "“";
   }
 
   blockquote:after {
     content: "”";
-    top: 95px;
-    left: 190px;
+    top: 120px;
+    left: 220px;
   }
 
   blockquote:before,
@@ -606,28 +616,26 @@ div.col-10 {
     font-size: 6rem;
   }
 
+  /*Gallery section*/
+  .the-gallery-section {
+    margin-top: 15%;
+  }
+  .the-gallery-section div.gallery.row {
+    margin: 5px !important;
+    padding: 0;
+  }
+
+  .the-gallery-section div.subheading-wrapper {
+    padding: 0;
+  }
+
   .img-wrapper-first {
     height: 220px;
     width: auto;
     object-fit: fill;
   }
 
-  footer div.container.row ul li,
-  footer div.container.row div h5 {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-
-  footer div.brand-col h5 span & a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer div.container.row div h5 {
-    justify-content: center;
-    align-items: center;
-  }
+  /* Featured dishes section*/
 
   div.card.me-5 {
     margin: 0 !important;
@@ -644,5 +652,25 @@ div.col-10 {
   div.menu-btn {
     display: flex;
     justify-content: space-evenly;
+  }
+
+  /*Footer section*/
+
+  footer div.container.row ul li,
+  footer div.container.row div h5 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  footer div.brand-col h5 span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand-col h5 span a {
+    display: flex;
+    flex-direction: row;
   }
 }
