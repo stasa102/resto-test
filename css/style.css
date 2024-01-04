@@ -387,7 +387,6 @@ cite {
 }
 
 .about-us-section {
-  margin-bottom: 5%;
   padding: 0px 10px;
   color: var(--lighterGrey);
   font-family: var(--cormorantFont);
@@ -672,29 +671,6 @@ div.col-10 {
     object-fit: cover;
   }
 
-  cite {
-    left: -20px;
-    justify-content: center;
-    font-size: calc(0.4em + 1vw);
-  }
-
-  blockquote:before {
-    content: "“";
-  }
-
-  blockquote:after {
-    content: "”";
-    top: 120px;
-    left: 220px;
-  }
-
-  blockquote:before,
-  blockquote:after {
-    position: absolute;
-    color: #dedede;
-    font-size: 6rem;
-  }
-
   /* Featured dishes section*/
 
   .course-info .course-name,
@@ -709,38 +685,91 @@ div.col-10 {
   }
 
   div.card-wrapper {
-    padding: 0 0 40px 0;
+    padding: 0 10% 40px 10%;
   }
 
   div.subheading-wrapper {
-    height: 70px;
-    padding: 0;
+    width: 81%;
+    position: relative;
+    left: 50px;
+    height: 75px;
   }
 
   .card-wrapper {
     padding-bottom: 75px;
   }
 
+  /*About us section*/
+
+  div.info-about-us.container.row {
+    padding-left: 2.3rem;
+  }
+
+  .about-us-section {
+    padding-left: 15px;
+    padding-right: 50px;
+    text-align: justify;
+  }
+
+  .about-us-section .subheading-wrapper {
+    position: relative;
+    left: 35px;
+  }
+
+  .about-us-line-hr hr {
+    width: 20%;
+  }
+  cite {
+    justify-content: center;
+    font-size: calc(0.4em + 1vw);
+    top: 20px;
+  }
+  blockquote {
+    font-family: var(--styleScriptFont);
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 1;
+    position: relative;
+    margin-top: 20px;
+    padding: 30px;
+  }
+  blockquote:before {
+    content: "“";
+  }
+
+  blockquote:after {
+    content: "”";
+    top: 120px;
+    left: 90%;
+  }
+
+  blockquote:before,
+  blockquote:after {
+    position: absolute;
+    color: #dedede;
+    font-size: 6rem;
+  }
+
+  .second.col-sm-12.col-md-6 {
+    padding: 0;
+  }
+
+  .list.col-sm-12.col-md-6 {
+    padding-left: 0;
+    padding-top: 15px;
+    position: relative;
+    bottom: 20px;
+  }
+
   /*Gallery section*/
 
   .the-gallery-section {
-    margin-top: 15%;
-  }
-
-  h4 {
-    left: 4px;
-  }
-
-  div.gallery.row {
-    padding: 0 !important;
-  }
-  .the-gallery-section div.gallery.row {
-    margin: 5px !important;
-    padding: 0;
+    margin-top: 5%;
+    padding: 0 8rem;
   }
 
   .the-gallery-section div.subheading-wrapper {
-    padding: 0;
+    left: 0;
   }
 
   .img-wrapper-first {
@@ -761,6 +790,7 @@ div.col-10 {
   footer div.col-sm-12 {
     display: flex;
     justify-content: space-evenly;
+    padding: 0px 2.3rem;
   }
 
   footer div.brand-col h5 span {
