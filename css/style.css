@@ -979,6 +979,99 @@ a.brand.footer:hover {
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1140px) {
+  /*Menu section*/
+  .the-menu {
+    position: relative;
+    right: 8px;
+  }
+
+  .menu-div {
+    padding-left: 50px;
+  }
+
+  .menu-course-btn {
+    position: relative;
+    left: 15px;
+  }
+
+  /*Featured dishes section*/
+
+  #carouselIndicators {
+    width: 80%;
+  }
+
+  div.subheading-wrapper {
+    height: 90px;
+  }
+
+  /*About us section*/
+
+  .about-us-line-hr hr {
+    width: 20%;
+  }
+
+  .about-us-section {
+    width: 80%;
+  }
+
+  .about-us-section .subheading-wrapper {
+    position: relative;
+    left: 25px;
+  }
+
+  .heading-about-us.container {
+    padding: 20px 0px 20px 25px;
+  }
+
+  div.info-about-us.container.row {
+    height: 200px;
+    width: 90%;
+    position: relative;
+    left: 25px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+  }
+
+  .first hr {
+    margin: 3rem 0;
+  }
+
+  .list.col-sm-12.col-md-6 {
+    padding: 0;
+    bottom: 0;
+    right: 15px;
+  }
+
+  blockquote:before {
+    position: relative;
+    left: 40px;
+  }
+
+  blockquote:after {
+    position: relative;
+    float: right;
+    right: 60px;
+    bottom: 130px;
+  }
+
+  cite {
+    position: relative;
+    left: 80px;
+    bottom: 115px;
+    width: 80%;
+  }
+
+  /*Gallery section*/
+
+  .the-gallery-section {
+    width: 73%;
+    padding: 0;
+    position: relative;
+    left: 135px;
+    margin-top: 10%;
+  }
+
   .img-wrapper-first {
     height: 4em;
     width: auto;
@@ -1005,6 +1098,22 @@ a.brand.footer:hover {
 
   svg.bi.bi-search {
     top: 350%;
+  }
+
+  /*Footer section*/
+
+  .footer .col-md-12 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer div.container.row {
+    padding: 0 75px;
+  }
+
+  .footer .brand-col h5 {
+    position: relative;
+    right: 25px;
   }
 }
 
