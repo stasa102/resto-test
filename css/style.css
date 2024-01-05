@@ -273,10 +273,6 @@ h4 {
   --bs-card-border-color: transparent;
 }
 
-/* .img-wrapper {
-  height: calc(100% / 2);
-} */
-
 .card-img-top {
   border-radius: 0;
   object-fit: cover;
@@ -405,6 +401,11 @@ cite {
 div.info-about-us.container.row {
   padding-left: 50px;
   /* padding-bottom: 30px; */
+}
+
+.about-us-section .list {
+  display: flex;
+  justify-content: center;
 }
 
 footer .row {
@@ -539,6 +540,18 @@ div.col-10 {
 
 .list-unstyled.links {
   cursor: pointer;
+}
+
+.list-unstyled.links li:hover {
+  color: #f34949;
+}
+
+a.brand.footer:hover {
+  color: #a1a0a0;
+}
+
+.pixel-hunt:hover {
+  color: #f34949;
 }
 
 /* Responsive */
@@ -778,6 +791,23 @@ div.col-10 {
     object-fit: fill;
   }
 
+  .card {
+    height: 15em;
+  }
+
+  div.card-body {
+    padding-right: 10px;
+  }
+
+  p.course-name,
+  span.course-price {
+    font-size: 12px;
+  }
+
+  span.course-likes-num {
+    font-size: 10px;
+  }
+
   /*Footer section*/
 
   footer div.container.row ul li,
@@ -803,37 +833,11 @@ div.col-10 {
     display: flex;
     align-items: left;
   }
-
-  .list-unstyled.links li:hover {
-    color: #f34949;
-  }
-
-  a.brand.footer:hover {
-    color: #a1a0a0;
-  }
-
-  .pixel-hunt:hover {
-    color: #f34949;
-  }
-  .card {
-    height: 15em;
-  }
-
-  div.card-body {
-    padding-right: 10px;
-  }
-
-  p.course-name,
-  span.course-price {
-    font-size: 12px;
-  }
-
-  span.course-likes-num {
-    font-size: 10px;
-  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
+  /*Featured dishes section*/
+
   .img-wrapper-first {
     height: 14em;
     width: auto;
@@ -858,6 +862,84 @@ div.col-10 {
     font-size: 12px;
   }
 
+  .featured-dishes-section {
+    padding: 60px;
+  }
+
+  .featured-dishes-section .subheading-wrapper {
+    width: 98%;
+    position: relative;
+    left: 0;
+  }
+
+  /*About us section*/
+
+  div.info-about-us.container.row {
+    padding: 0;
+    position: relative;
+    right: 10px;
+  }
+
+  .heading-about-us.container {
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+
+  .about-us-section div.subheading-wrapper {
+    width: 20%;
+    position: relative;
+    left: 50px;
+  }
+
+  .list.col-sm-12.col-md-6 {
+    bottom: 0;
+    left: 20px;
+    padding-left: 25px;
+    padding-right: 78px;
+  }
+
+  cite {
+    position: relative;
+    bottom: 115px;
+    left: 30px;
+    width: 70%;
+  }
+
+  blockquote:before {
+    right: 20px;
+    font-size: 6rem;
+    bottom: 30px;
+  }
+
+  blockquote:after {
+    right: 80px;
+    top: 130px;
+    font-size: 6rem;
+  }
+
+  /*Gallery section*/
+
+  .the-gallery-section {
+    margin: 0;
+    width: 85%;
+    position: relative;
+    left: 70px;
+  }
+
+  .the-gallery-section div.container .gallery.row.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 25px;
+    padding-right: 40px;
+  }
+
+  div.subheading-wrapper {
+    position: relative;
+    left: 20px;
+    margin-bottom: 15%;
+  }
+
   .img-wrapper-first svg.bi.bi-search {
     position: absolute;
     left: 40%;
@@ -880,8 +962,20 @@ div.col-10 {
     padding: 0;
   }
 
-  h4 {
-    right: 12px;
+  /*Footer section*/
+
+  .footer .col-md-12 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer div.container.row {
+    padding: 0 50px;
+  }
+
+  .footer .brand-col h5 {
+    position: relative;
+    right: 15px;
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1140px) {
