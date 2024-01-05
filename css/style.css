@@ -426,6 +426,7 @@ footer .row {
 
 div.subheading-wrapper {
   padding: 0 !important;
+  margin-bottom: 90px;
 }
 .the-gallery-section {
   margin-bottom: 10%;
@@ -497,7 +498,7 @@ svg.bi.bi-search {
 #scroll-to-top {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 60px;
   padding: 10px;
   border: none;
   border-radius: 100%;
@@ -848,7 +849,6 @@ a.brand.footer:hover {
     align-items: left;
   }
 }
-
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .menu-section.container {
     padding-left: 0 !important;
@@ -1112,7 +1112,7 @@ a.brand.footer:hover {
   /*Gallery section*/
 
   .the-gallery-section {
-    width: 73%;
+    width: 75%;
     padding: 0;
     position: relative;
     left: 135px;
@@ -1163,13 +1163,20 @@ a.brand.footer:hover {
     right: 25px;
   }
 }
-
 @media screen and (min-width: 1141px) and (max-width: 1200px) {
   /*Featured dishes section*/
 
   .featured-dishes-section {
     position: relative;
     width: 67%;
+  }
+
+  img.card-img-top {
+    height: 190px;
+  }
+
+  .card {
+    height: 25em;
   }
 
   /*About us section*/
@@ -1195,7 +1202,7 @@ a.brand.footer:hover {
 
   div.info-about-us.container.row {
     height: 200px;
-    width: 90%;
+    width: 87%;
     position: relative;
     left: 25px;
     display: flex;
@@ -1231,19 +1238,43 @@ a.brand.footer:hover {
     bottom: 115px;
     width: 80%;
   }
-  /*---------------------*/
+  /*Gallery section*/
+
+  .the-gallery-section {
+    position: relative;
+    left: 77px;
+    width: 87%;
+    margin-bottom: 0;
+  }
+
+  .the-gallery-section .subheading-wrapper {
+    margin-bottom: 100px;
+  }
+
   .img-wrapper-first {
     height: 14em;
     width: auto;
     object-fit: contain;
   }
 
-  img.card-img-top {
-    height: 190px;
+  /*Scroll to top*/
+  #scroll-to-top {
+    right: 90px;
+  }
+  /*Footer section*/
+
+  .footer .col-md-12 {
+    display: flex;
+    justify-content: center;
   }
 
-  .card {
-    height: 25em;
+  .footer div.container.row {
+    padding: 0 75px;
+  }
+
+  .footer .brand-col h5 {
+    position: relative;
+    right: 25px;
   }
 }
 
