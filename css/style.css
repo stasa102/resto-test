@@ -610,44 +610,53 @@ a.brand.footer:hover {
 /* Responsive */
 
 @media screen and (max-width: 576px) {
-  .about-us-section {
-    padding: 10%;
+  div.subheading-wrapper {
+    margin-bottom: 40px;
+    height: 30px;
   }
+
+  /*Menu section*/
+
+  div.row.menu-courses {
+    width: 90%;
+  }
+
+  div.menu-price {
+    text-align: center;
+  }
+
+  div.menu-div {
+    padding-left: 0;
+  }
+
+  .menu-btn div.row {
+    position: relative;
+    left: 10px;
+  }
+
+  /*About us section*/
 
   div.info-about-us.container.row,
   .heading-about-us.container {
     padding-left: 6px;
   }
-  .the-gallery-section div.container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-  }
+
   .about-us-section {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-  }
-
-  .second.col-sm-12.col-md-6 {
-    padding: 0;
+    padding: 10%;
   }
 
   .first.col-sm-12.col-md-4 {
     padding: 0;
   }
-  footer div.container.row {
-    padding-left: 10%;
+  .second.col-sm-12.col-md-6 {
+    padding: 0;
   }
 
   .about-us-section h4 {
     left: 6px;
-  }
-
-  cite {
-    justify-content: center;
-    bottom: 50px;
   }
 
   div.blockquote {
@@ -655,22 +664,76 @@ a.brand.footer:hover {
   }
 
   blockquote:after {
+    font-size: 100px;
     position: relative;
     float: right;
-    bottom: 50px;
+    bottom: 90px;
+    right: 10px;
   }
 
   blockquote:before {
-    top: 50px;
+    font-size: 100px;
+    left: 50px;
   }
+  cite {
+    justify-content: center;
+    bottom: 80px;
+    font-size: medium;
+    text-align: center;
+  }
+
+  .about-us-line-hr {
+    width: 100%;
+  }
+  .about-us-line-hr hr {
+    position: relative;
+    width: 100%;
+    left: 120px;
+    bottom: 30px;
+  }
+
+  .list.col-sm-12.col-md-6 {
+    padding-top: 10%;
+  }
+
+  .about-us-section div.subheading-wrapper {
+    margin-bottom: 40px;
+  }
+
+  /*Gallery section*/
+
+  .the-gallery-section div.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 90%;
+    margin-bottom: 10%;
+  }
+
+  /*Footer section*/
+  footer div.container.row {
+    padding-left: 10%;
+  }
+
+  .example-image {
+    height: 16em;
+  }
+
+  /*Featured  dishes section*/
 
   .featured-dishes-section .carousel {
-    padding: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
     margin-top: 10%;
+    width: 90%;
   }
-
+  .card {
+    width: 50%;
+    margin-top: 20px;
+  }
   .card-img-top {
-    height: 100px;
+    height: 150px;
   }
 
   .course-info .course-name,
@@ -680,18 +743,12 @@ a.brand.footer:hover {
     font-size: calc(0.4em + 1vw);
   }
 
-  .featured-dishes-line-hr hr {
+  .featured-dishes-line-hr {
     width: 20%;
   }
 
-  .menu-btn div.row {
-    position: relative;
-    left: 10px;
-  }
-
-  div.subheading-wrapper {
-    margin-bottom: 40px;
-    height: 30px;
+  .featured-dishes-line-hr hr {
+    width: 100%;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -755,12 +812,19 @@ a.brand.footer:hover {
     font-size: calc(0.4em + 1vw);
   }
 
-  img.card-img-top {
-    height: 90px;
+  .card {
+    width: 50%;
+    /* margin-top: 20px; */
+  }
+
+  .featured-dishes-section img.card-img-top {
+    height: 150px;
   }
 
   div.card-wrapper {
-    padding: 0 10% 40px 10%;
+    width: 86%;
+    position: relative;
+    left: 9%;
   }
 
   div.subheading-wrapper {
@@ -773,6 +837,23 @@ a.brand.footer:hover {
   .card-wrapper {
     padding-bottom: 75px;
   }
+
+  /* .card {
+    height: 15em;
+  }
+
+  div.card-body {
+    padding-right: 10px;
+  }
+
+  p.course-name,
+  span.course-price {
+    font-size: 12px;
+  }
+
+  span.course-likes-num {
+    font-size: 10px;
+  } */
 
   /*About us section*/
 
@@ -789,7 +870,7 @@ a.brand.footer:hover {
   .about-us-section .subheading-wrapper {
     position: relative;
     left: 35px;
-    height: 30px;
+    height: 10px;
   }
 
   .about-us-line-hr hr {
@@ -815,7 +896,7 @@ a.brand.footer:hover {
 
   blockquote:after {
     content: "”";
-    top: 120px;
+    top: 60px;
     left: 90%;
   }
 
@@ -832,7 +913,7 @@ a.brand.footer:hover {
 
   .list.col-sm-12.col-md-6 {
     padding-left: 0;
-    padding-top: 15px;
+    padding-top: 80px;
     position: relative;
     bottom: 20px;
   }
@@ -841,7 +922,8 @@ a.brand.footer:hover {
 
   .the-gallery-section {
     margin-top: 5%;
-    padding: 0 8rem;
+    margin-bottom: 10%;
+    width: 65%;
   }
 
   .the-gallery-section div.subheading-wrapper {
@@ -850,26 +932,10 @@ a.brand.footer:hover {
   }
 
   .img-wrapper-first {
-    height: 17em;
+    height: 19em;
     width: auto;
-    object-fit: fill;
-  }
-
-  .card {
-    height: 15em;
-  }
-
-  div.card-body {
-    padding-right: 10px;
-  }
-
-  p.course-name,
-  span.course-price {
-    font-size: 12px;
-  }
-
-  span.course-likes-num {
-    font-size: 10px;
+    overflow: hidden;
+    object-fit: cover;
   }
 
   /*Footer section*/
