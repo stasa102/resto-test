@@ -23,3 +23,13 @@ $(function () {
     $("html, body").animate({ scrollTop: 0 }, 500);
   });
 });
+
+// Navigation smooth scroll
+
+$("header nav a").on("click", function (e) {
+  e.preventDefault();
+
+  const href = $(this).attr("href");
+
+  $("html, body").animate({ scrollTop: $(href).offset().top }, 500);
+});

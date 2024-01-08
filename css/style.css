@@ -7,6 +7,10 @@
   --diphylleiaFont: "Diphylleia", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: transparent !important;
@@ -128,6 +132,10 @@ div.col-8 {
 }
 
 /* Section: Menu */
+.menu-section {
+  padding-bottom: 5%;
+}
+
 .the-menu {
   padding-top: 0 !important;
 }
@@ -227,6 +235,9 @@ div.col-8 {
 
 /* Featured-dishes section - card */
 
+.featured-dishes-section {
+  padding-bottom: 5%;
+}
 .featured.carousel-indicators {
   color: #00000019;
   position: relative;
@@ -249,7 +260,6 @@ h4 {
 }
 
 .featured-dishes-line-hr {
-  display: inline;
   position: relative;
   width: 20%;
   top: 19px;
@@ -264,6 +274,7 @@ h4 {
 
 .subheading-wrapper {
   padding: 0 40px;
+  height: 30px;
 }
 
 .card {
@@ -334,6 +345,9 @@ h4 {
 
 /*about-us-section */
 
+#about-us {
+  padding-bottom: 5%;
+}
 .blockquote {
   font-family: "Special Elite", cursive;
   color: #777777;
@@ -371,19 +385,17 @@ blockquote:after {
 }
 
 cite {
-  font-size: calc(0.4em + 1vw);
+  font-size: 30px;
   display: flex;
   font-family: var(--diphylleiaFont);
   line-height: 1.5;
   position: relative;
   justify-content: flex-start;
   align-content: center;
-  /* top: 2rem;
-  left: 5rem; */
 }
 
 .about-us-section {
-  padding: 0px 10px;
+  padding: 0px 15px;
   color: var(--lighterGrey);
   font-family: var(--cormorantFont);
 }
@@ -410,14 +422,29 @@ div.info-about-us.container.row {
   justify-content: center;
 }
 
-footer .row {
-  --bs-gutter-x: 0;
-}
-
 .list.col-sm-12.col-md-6 {
   padding-left: 30px;
   position: relative;
   bottom: 20px;
+}
+
+.list.col-sm-12.col-md-6 ul {
+  list-style: none;
+}
+
+.list.col-sm-12.col-md-6 ul li:before {
+  content: "\2022";
+  color: var(--orange);
+  font-weight: bolder;
+  display: inline-block;
+  width: 20px;
+  margin-left: -1em;
+  font-size: 25px;
+}
+
+#about-us-list-p {
+  position: relative;
+  right: 30px;
 }
 
 .second.col-sm-12.col-md-6 {
@@ -427,13 +454,11 @@ footer .row {
 /*Gallery section*/
 
 div.subheading-wrapper {
-  padding: 0 !important;
+  padding: 0;
   margin-bottom: 90px;
+  height: 30px;
 }
 .the-gallery-section {
-  margin-bottom: 10%;
-  margin-top: 5%;
-  padding: 10%;
   color: var(--lighterGrey);
   font-family: var(--cormorantFont);
 }
@@ -499,8 +524,8 @@ svg.bi.bi-search {
 
 #scroll-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 60px;
+  bottom: 40px;
+  right: 50px;
   padding: 20px;
   border: none;
   border-radius: 100%;
@@ -517,7 +542,9 @@ svg.bi.bi-search {
 /* Footer */
 
 .footer {
-  padding-bottom: 1%;
+  padding-bottom: 4%;
+  padding-top: 2%;
+
   background-color: #424141;
   color: #dedede;
   font-family: var(--cormorantFont);
@@ -535,6 +562,10 @@ svg.bi.bi-search {
 
 div.col-10 {
   padding-left: 180px;
+}
+
+footer .row {
+  --bs-gutter-x: 0;
 }
 
 .pixel-hunt {
@@ -652,6 +683,11 @@ a.brand.footer:hover {
     position: relative;
     left: 10px;
   }
+
+  div.subheading-wrapper {
+    margin-bottom: 40px;
+    height: 30px;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
   /*Navbar section*/
@@ -674,6 +710,10 @@ a.brand.footer:hover {
 
   .menu-section.container {
     padding-left: 0 !important;
+  }
+
+  .menu-div {
+    padding-left: 0;
   }
   .menu-course-btn {
     font-size: 12px;
@@ -722,7 +762,7 @@ a.brand.footer:hover {
     width: 81%;
     position: relative;
     left: 50px;
-    height: 75px;
+    height: 30px;
   }
 
   .card-wrapper {
@@ -744,6 +784,7 @@ a.brand.footer:hover {
   .about-us-section .subheading-wrapper {
     position: relative;
     left: 35px;
+    height: 30px;
   }
 
   .about-us-line-hr hr {
@@ -800,6 +841,7 @@ a.brand.footer:hover {
 
   .the-gallery-section div.subheading-wrapper {
     left: 0;
+    height: 30px;
   }
 
   .img-wrapper-first {
@@ -849,6 +891,11 @@ a.brand.footer:hover {
   .brand-col h5 span a {
     display: flex;
     align-items: left;
+  }
+
+  div.subheading-wrapper {
+    margin-bottom: 40px;
+    height: 30px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -919,6 +966,7 @@ a.brand.footer:hover {
     width: 98%;
     position: relative;
     left: 0;
+    height: 30px;
   }
 
   /*About us section*/
@@ -934,6 +982,7 @@ a.brand.footer:hover {
   .about-us-section .subheading-wrapper {
     position: relative;
     left: 5px;
+    height: 30px;
   }
 
   .heading-about-us.container {
@@ -1000,7 +1049,8 @@ a.brand.footer:hover {
   div.subheading-wrapper {
     position: relative;
     left: 25px;
-    margin-bottom: 15%;
+    margin-bottom: 40px;
+    height: 30px;
   }
 
   .img-wrapper-first svg.bi.bi-search {
@@ -1041,6 +1091,11 @@ a.brand.footer:hover {
     position: relative;
     right: 15px;
   }
+
+  div.subheading-wrapper {
+    margin-bottom: 40px;
+    height: 30px;
+  }
 }
 @media screen and (min-width: 993px) and (max-width: 1140px) {
   /*Featured dishes section*/
@@ -1050,7 +1105,7 @@ a.brand.footer:hover {
   }
 
   div.subheading-wrapper {
-    height: 90px;
+    height: 30px;
   }
 
   /*About us section*/
@@ -1061,6 +1116,8 @@ a.brand.footer:hover {
 
   .about-us-section {
     width: 80%;
+    position: relative;
+    right: 20px;
   }
 
   .about-us-section .subheading-wrapper {
@@ -1117,7 +1174,7 @@ a.brand.footer:hover {
     width: 75%;
     padding: 0;
     position: relative;
-    left: 135px;
+    left: 100px;
     margin-top: 10%;
   }
 
@@ -1163,6 +1220,10 @@ a.brand.footer:hover {
   .footer .brand-col h5 {
     position: relative;
     right: 25px;
+  }
+
+  div.subheading-wrapper {
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1141px) and (max-width: 1200px) {
@@ -1249,10 +1310,6 @@ a.brand.footer:hover {
     margin-bottom: 0;
   }
 
-  .the-gallery-section .subheading-wrapper {
-    margin-bottom: 100px;
-  }
-
   .img-wrapper-first {
     height: 14em;
     width: auto;
@@ -1290,11 +1347,26 @@ a.brand.footer:hover {
     font-size: 25px;
   }
 
+  /*Carousel*/
+
+  .textOverCarousel h2.heading {
+    font-size: 70px;
+  }
+
+  .textOverCarousel p.description {
+    font-size: 25px;
+  }
+
   /*menu*/
 
   .line.col-4 {
     position: relative;
     top: 55px;
+  }
+
+  .menu-courses .row {
+    margin-right: 5px;
+    margin-left: 5px;
   }
 
   h6.menu {
@@ -1343,7 +1415,7 @@ a.brand.footer:hover {
 
   #carouselIndicators {
     width: 90%;
-    right: 10px;
+    /* left: 1%; */
   }
 
   .subheading-wrapper h4 {
@@ -1363,7 +1435,7 @@ a.brand.footer:hover {
   /*About us*/
   .about-us-section {
     width: 90%;
-    padding: 0 50px 0 30px;
+    padding: 0 50px 0 50px;
   }
 
   .heading-about-us.container {
@@ -1383,17 +1455,9 @@ a.brand.footer:hover {
   .list.col-sm-12.col-md-6 {
     padding-left: 0;
     padding-right: 80px;
-
     position: relative;
-    bottom: 0px;
-  }
-
-  .first.col-sm-12.col-md-6 {
-    padding-right: 80px;
-  }
-  .second.col-sm-12.col-md-6 {
-    padding-left: 40px;
-    padding-right: 30px;
+    top: 20px;
+    height: max-content;
   }
 
   .first hr {
@@ -1402,28 +1466,28 @@ a.brand.footer:hover {
 
   blockquote:before {
     left: 30px;
-    bottom: 20px;
+    top: 35px;
   }
 
   blockquote:after {
     position: relative;
     float: right;
-    bottom: 200px;
-    right: 30px;
+    bottom: 100px;
+    right: 35px;
   }
   cite {
-    font-size: 40px;
-    bottom: 170px;
-    padding-left: 100px;
+    font-size: 25px !important;
+    bottom: 100px;
+    left: 80px;
+    text-align: center;
   }
 
   /*gallery section*/
 
   .the-gallery-section {
     position: relative;
-    width: 91%;
-    padding-left: 100px;
-    padding-right: 0;
+    width: 80%;
+    padding-bottom: 10%;
   }
 
   .gallery-hr hr {
