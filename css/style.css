@@ -451,6 +451,11 @@ div.info-about-us.container.row {
   padding-left: 40px;
 }
 
+.about-us-section div.subheading-wrapper {
+  padding-bottom: 0;
+  margin-bottom: 70px;
+}
+
 /*Gallery section*/
 
 div.subheading-wrapper {
