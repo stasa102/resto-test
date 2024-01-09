@@ -609,7 +609,7 @@ a.brand.footer:hover {
 
 /* Responsive */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576.99px) {
   div.subheading-wrapper {
     margin-bottom: 40px;
     height: 30px;
@@ -696,10 +696,6 @@ a.brand.footer:hover {
     padding-top: 10%;
   }
 
-  .list.col-sm-12.col-md-6 {
-    padding-left: 0;
-  }
-
   .about-us-section div.subheading-wrapper {
     margin-bottom: 40px;
   }
@@ -711,13 +707,13 @@ a.brand.footer:hover {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    width: 90%;
+    width: 91%;
     margin-bottom: 10%;
   }
 
   /*Footer section*/
   footer div.container.row {
-    padding-left: 10%;
+    padding-left: 8%;
   }
 
   .example-image {
@@ -761,7 +757,7 @@ a.brand.footer:hover {
     width: 50%;
   }
 }
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 768.99px) {
   /*Navbar section*/
 
   .navbar-brand {
@@ -782,6 +778,13 @@ a.brand.footer:hover {
 
   .menu-section.container {
     padding-left: 0 !important;
+    position: relative;
+    right: 1%;
+  }
+
+  .menu-course-info {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .menu-div {
@@ -819,6 +822,11 @@ a.brand.footer:hover {
 
   /* Featured dishes section*/
 
+  #carouselIndicators {
+    position: relative;
+    left: 2%;
+  }
+
   .course-info .course-name,
   .course-price,
   .course-likes,
@@ -828,6 +836,7 @@ a.brand.footer:hover {
 
   .card {
     width: 50%;
+    padding-left: 20px;
     /* margin-top: 20px; */
   }
 
@@ -836,16 +845,16 @@ a.brand.footer:hover {
   }
 
   div.card-wrapper {
-    width: 86%;
+    width: 97%;
     position: relative;
-    left: 9%;
+    left: 2%;
   }
 
   div.subheading-wrapper {
-    width: 81%;
+    width: 91%;
     position: relative;
-    left: 50px;
     height: 30px;
+    left: 4%;
   }
 
   .card-wrapper {
@@ -855,23 +864,24 @@ a.brand.footer:hover {
   /*About us section*/
 
   div.info-about-us.container.row {
-    padding-left: 2.3rem;
+    padding-left: 0;
   }
 
   .about-us-section {
-    padding-left: 15px;
-    padding-right: 50px;
+    padding: 0;
+    width: 76%;
+    position: relative;
     text-align: justify;
   }
 
   .about-us-section .subheading-wrapper {
     position: relative;
-    left: 35px;
     height: 10px;
+    width: 100;
   }
 
   .heading-about-us.container {
-    padding-top: 0;
+    padding: 0;
   }
 
   .about-us-line-hr hr {
@@ -925,9 +935,9 @@ a.brand.footer:hover {
   .the-gallery-section {
     margin-top: 5%;
     margin-bottom: 10%;
-    width: 80%;
+    width: 76%;
     position: relative;
-    left: 10%;
+    left: 12%;
   }
 
   .the-gallery-section div.subheading-wrapper {
@@ -954,7 +964,7 @@ a.brand.footer:hover {
   footer div.col-sm-12 {
     display: flex;
     justify-content: center;
-    padding: 0px 6%;
+    padding: 0px 12%;
   }
 
   footer div.brand-col h5 span {
@@ -967,13 +977,8 @@ a.brand.footer:hover {
     display: flex;
     align-items: left;
   }
-
-  div.subheading-wrapper {
-    margin-bottom: 40px;
-    height: 30px;
-  }
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992.99px) {
   .menu-section.container {
     padding-left: 0 !important;
     position: relative;
@@ -1066,7 +1071,7 @@ a.brand.footer:hover {
   .about-us-section {
     width: 83%;
     position: relative;
-    right: 1%;
+    right: 2%;
   }
 
   .about-us-section .subheading-wrapper {
@@ -1092,7 +1097,10 @@ a.brand.footer:hover {
   }
 
   .first hr {
-    margin: 3rem 0;
+    margin: 30px 0;
+  }
+  .second.col-sm-12.col-md-6 {
+    padding-left: 10px;
   }
   .list.col-sm-12.col-md-6 {
     padding: 0;
@@ -1102,14 +1110,15 @@ a.brand.footer:hover {
   blockquote:before {
     position: relative;
     left: 10px;
-    bottom: 20px;
+    bottom: 10px;
     font-size: 100px;
   }
 
   blockquote:after {
     position: relative;
     float: right;
-    bottom: 100px;
+    bottom: 80px;
+    left: 10px;
     font-size: 100px;
   }
 
@@ -1118,17 +1127,17 @@ a.brand.footer:hover {
     width: 100%;
     position: relative;
     left: 45px;
-    bottom: 100px;
+    bottom: 80px;
     width: 90%;
-    font-size: 20px;
+    font-size: 19px;
   }
   /*Gallery section*/
 
   .the-gallery-section {
     margin: 0;
-    width: 95%;
+    width: 87%;
     position: relative;
-    left: 2%;
+    left: 6%;
     margin-bottom: 10%;
   }
 
@@ -1188,10 +1197,12 @@ a.brand.footer:hover {
   }
 
   .footer-content {
-    width: 95%;
+    width: 85%;
+    left: 5%;
+    position: relative;
   }
 }
-@media screen and (min-width: 993px) and (max-width: 1140px) {
+@media screen and (min-width: 993px) and (max-width: 1140.99px) {
   /*Menu section*/
   .menu-div {
     padding: 0;
@@ -1342,7 +1353,7 @@ a.brand.footer:hover {
     margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 1141px) and (max-width: 1200px) {
+@media screen and (min-width: 1141px) and (max-width: 1200.99px) {
   /*Menu section*/
 
   .menu-div {
