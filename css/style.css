@@ -1376,7 +1376,7 @@ a.brand.footer:hover {
 
   .featured-dishes-section {
     position: relative;
-    width: 76%;
+    width: 72%;
   }
 
   img.card-img-top {
@@ -1391,13 +1391,15 @@ a.brand.footer:hover {
 
   .about-us-section {
     margin-top: 10%;
-    width: 75%;
+    width: 72%;
     position: relative;
 
     padding: 0;
   }
   .about-us-line-hr hr {
     width: 20%;
+    left: 120px;
+    bottom: 29px;
   }
 
   .about-us-section .subheading-wrapper {
@@ -1463,8 +1465,8 @@ a.brand.footer:hover {
 
   .the-gallery-section {
     position: relative;
-    left: 12%;
-    width: 75%;
+    left: 14%;
+    width: 72%;
     margin-bottom: 10%;
   }
 
@@ -1486,7 +1488,7 @@ a.brand.footer:hover {
   }
 
   .footer div.container.row {
-    padding: 0 75px;
+    padding: 0 50px;
   }
 
   .footer .brand-col h5 {
