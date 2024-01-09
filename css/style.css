@@ -788,6 +788,10 @@ a.brand.footer:hover {
     justify-content: space-evenly;
   }
 
+  .menu-price {
+    text-align: center;
+  }
+
   .down {
     left: 10px;
   }
@@ -838,23 +842,6 @@ a.brand.footer:hover {
     padding-bottom: 75px;
   }
 
-  /* .card {
-    height: 15em;
-  }
-
-  div.card-body {
-    padding-right: 10px;
-  }
-
-  p.course-name,
-  span.course-price {
-    font-size: 12px;
-  }
-
-  span.course-likes-num {
-    font-size: 10px;
-  } */
-
   /*About us section*/
 
   div.info-about-us.container.row {
@@ -873,6 +860,10 @@ a.brand.footer:hover {
     height: 10px;
   }
 
+  .heading-about-us.container {
+    padding-top: 0;
+  }
+
   .about-us-line-hr hr {
     width: 20%;
   }
@@ -888,7 +879,6 @@ a.brand.footer:hover {
     line-height: 1;
     position: relative;
     margin-top: 20px;
-    padding: 30px;
   }
   blockquote:before {
     content: "“";
@@ -950,7 +940,7 @@ a.brand.footer:hover {
   footer div.col-sm-12 {
     display: flex;
     justify-content: space-evenly;
-    padding: 0px 2.3rem;
+    padding: 0px 100px;
   }
 
   footer div.brand-col h5 span {
