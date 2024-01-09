@@ -868,6 +868,7 @@ a.brand.footer:hover {
     width: 20%;
   }
   cite {
+    text-align: center;
     justify-content: center;
     font-size: calc(0.4em + 1vw);
     top: 20px;
@@ -882,12 +883,13 @@ a.brand.footer:hover {
   }
   blockquote:before {
     content: "“";
+    left: 30px;
   }
 
   blockquote:after {
     content: "”";
-    top: 60px;
-    left: 90%;
+    top: 100px;
+    left: 80%;
   }
 
   blockquote:before,
@@ -913,7 +915,9 @@ a.brand.footer:hover {
   .the-gallery-section {
     margin-top: 5%;
     margin-bottom: 10%;
-    width: 65%;
+    width: 80%;
+    position: relative;
+    left: 10%;
   }
 
   .the-gallery-section div.subheading-wrapper {
@@ -939,8 +943,8 @@ a.brand.footer:hover {
 
   footer div.col-sm-12 {
     display: flex;
-    justify-content: space-evenly;
-    padding: 0px 100px;
+    justify-content: center;
+    padding: 0px 6%;
   }
 
   footer div.brand-col h5 span {
@@ -976,6 +980,19 @@ a.brand.footer:hover {
     justify-content: space-evenly;
   }
 
+  .menu-price {
+    text-align: center;
+  }
+
+  .menu-div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .the-menu {
+    position: relative;
+    left: 2px;
+  }
   .down {
     left: 10px;
   }
@@ -983,7 +1000,7 @@ a.brand.footer:hover {
   .line-hr hr,
   .gallery-line hr,
   .featured-dishes-line-hr hr {
-    width: 20%;
+    width: 100%;
   }
 
   .img-wrapper img {
@@ -1018,13 +1035,10 @@ a.brand.footer:hover {
   }
 
   .featured-dishes-section {
-    width: 58%;
-    position: relative;
-    left: 10px;
+    width: 85%;
   }
 
   .featured-dishes-section .subheading-wrapper {
-    width: 98%;
     position: relative;
     left: 0;
     height: 30px;
@@ -1034,20 +1048,24 @@ a.brand.footer:hover {
 
   .about-us-line-hr hr {
     width: 20%;
+    position: relative;
+    bottom: 30px;
+    left: 120px !important;
   }
 
   .about-us-section {
-    width: 58%;
+    width: 90%;
   }
 
   .about-us-section .subheading-wrapper {
     position: relative;
     left: 5px;
     height: 30px;
+    margin-bottom: 50px !important;
   }
 
   .heading-about-us.container {
-    padding: 20px 0px;
+    padding: 10px 0px;
   }
 
   div.info-about-us.container.row {
@@ -1066,37 +1084,40 @@ a.brand.footer:hover {
   }
   .list.col-sm-12.col-md-6 {
     padding: 0;
-    right: 15px;
-    padding-top: 3rem;
+    padding-top: 10px;
   }
 
   blockquote:before {
     position: relative;
-    left: 40px;
+    left: 10px;
+    bottom: 20px;
+    font-size: 100px;
   }
 
   blockquote:after {
     position: relative;
     float: right;
-    left: 22px;
     bottom: 100px;
+    font-size: 100px;
   }
 
   cite {
+    text-align: center;
+    width: 100%;
     position: relative;
-    left: 80px;
+    left: 45px;
     bottom: 100px;
-    width: 58%;
-    font-size: large;
+    width: 90%;
+    font-size: 20px;
   }
   /*Gallery section*/
 
   .the-gallery-section {
     margin: 0;
-    width: 60%;
+    width: 95%;
     position: relative;
-    left: 200px;
-    padding: 0 0 100px 0;
+    left: 2%;
+    margin-bottom: 10%;
   }
 
   .the-gallery-section div.container .gallery.row.container {
@@ -1110,20 +1131,20 @@ a.brand.footer:hover {
   div.subheading-wrapper {
     position: relative;
     left: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 60px !important;
     height: 30px;
   }
 
   .img-wrapper-first svg.bi.bi-search {
     position: absolute;
     left: 40%;
-    top: 100%;
+    top: 60%;
   }
 
   .img-wrapper svg.bi.bi-search {
     position: absolute;
     left: 40%;
-    top: 42%;
+    top: 38%;
   }
 
   div.container.row {
@@ -1144,10 +1165,6 @@ a.brand.footer:hover {
     justify-content: center;
   }
 
-  .footer div.container.row {
-    padding: 0 70px;
-  }
-
   .footer .brand-col h5 {
     position: relative;
     right: 15px;
@@ -1156,6 +1173,10 @@ a.brand.footer:hover {
   div.subheading-wrapper {
     margin-bottom: 40px;
     height: 30px;
+  }
+
+  .footer-content {
+    width: 95%;
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1140px) {
