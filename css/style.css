@@ -645,7 +645,7 @@ a.brand.footer:hover {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    padding: 10%;
+    padding: 7%;
   }
 
   .first.col-sm-12.col-md-4 {
@@ -694,6 +694,10 @@ a.brand.footer:hover {
 
   .list.col-sm-12.col-md-6 {
     padding-top: 10%;
+  }
+
+  .list.col-sm-12.col-md-6 {
+    padding-left: 0;
   }
 
   .about-us-section div.subheading-wrapper {
@@ -749,6 +753,12 @@ a.brand.footer:hover {
 
   .featured-dishes-line-hr hr {
     width: 100%;
+  }
+
+  /*Footer*/
+
+  .footer-col {
+    width: 50%;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -1035,7 +1045,7 @@ a.brand.footer:hover {
   }
 
   .featured-dishes-section {
-    width: 85%;
+    width: 83%;
   }
 
   .featured-dishes-section .subheading-wrapper {
@@ -1054,7 +1064,9 @@ a.brand.footer:hover {
   }
 
   .about-us-section {
-    width: 90%;
+    width: 83%;
+    position: relative;
+    right: 1%;
   }
 
   .about-us-section .subheading-wrapper {
@@ -1180,10 +1192,29 @@ a.brand.footer:hover {
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1140px) {
+  /*Menu section*/
+  .menu-div {
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+  .menu-courses {
+    margin: 0;
+    padding-left: 60px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  .menu-price {
+    text-align: center;
+    padding: 0;
+  }
+
   /*Featured dishes section*/
 
   #carouselIndicators {
-    width: 80%;
+    width: 87%;
+    position: relative;
+    right: 1%;
   }
 
   div.subheading-wrapper {
@@ -1197,9 +1228,8 @@ a.brand.footer:hover {
   }
 
   .about-us-section {
-    width: 80%;
+    width: 95%;
     position: relative;
-    right: 20px;
   }
 
   .about-us-section .subheading-wrapper {
@@ -1227,37 +1257,41 @@ a.brand.footer:hover {
 
   .list.col-sm-12.col-md-6 {
     padding: 0;
-    bottom: 0;
-    right: 15px;
+    top: 40px;
   }
 
   blockquote:before {
     position: relative;
+    top: 30px;
     left: 40px;
+    font-size: 130px;
   }
 
   blockquote:after {
     position: relative;
     float: right;
-    right: 60px;
-    bottom: 130px;
+    bottom: 90px;
+    font-size: 130px;
   }
 
   cite {
+    text-align: center;
     position: relative;
     left: 80px;
-    bottom: 115px;
+    bottom: 80px;
     width: 80%;
+    font-size: 20px;
   }
 
   /*Gallery section*/
 
   .the-gallery-section {
-    width: 75%;
+    width: 83%;
     padding: 0;
     position: relative;
-    left: 100px;
+    left: 7%;
     margin-top: 10%;
+    margin-bottom: 10%;
   }
 
   .img-wrapper-first {
@@ -1296,7 +1330,7 @@ a.brand.footer:hover {
   }
 
   .footer div.container.row {
-    padding: 0 75px;
+    padding: 0 3%;
   }
 
   .footer .brand-col h5 {
@@ -1309,11 +1343,29 @@ a.brand.footer:hover {
   }
 }
 @media screen and (min-width: 1141px) and (max-width: 1200px) {
+  /*Menu section*/
+
+  .menu-div {
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+  .menu-courses {
+    margin: 0;
+    padding-left: 50px;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  .menu-price {
+    text-align: center;
+    padding: 0;
+  }
   /*Featured dishes section*/
 
   .featured-dishes-section {
     position: relative;
-    width: 67%;
+    width: 76%;
   }
 
   img.card-img-top {
@@ -1321,75 +1373,88 @@ a.brand.footer:hover {
   }
 
   .card {
-    height: 25em;
+    height: auto;
   }
 
   /*About us section*/
 
   .about-us-section {
-    width: 80%;
+    margin-top: 10%;
+    width: 75%;
     position: relative;
-    left: 40px;
-  }
 
+    padding: 0;
+  }
   .about-us-line-hr hr {
     width: 20%;
   }
 
   .about-us-section .subheading-wrapper {
     position: relative;
-    left: 25px;
   }
 
   .heading-about-us.container {
-    padding: 20px 0px 20px 25px;
+    padding: 0px 0px 20px 0px;
   }
 
   div.info-about-us.container.row {
-    height: 200px;
-    width: 87%;
+    width: 100%;
     position: relative;
-    left: 25px;
     display: flex;
     justify-content: space-around;
     padding-left: 0;
   }
 
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 0;
+  }
+
   .first hr {
     margin: 3rem 0;
+  }
+  .second.col-sm-12.col-md-6 {
+    padding-left: 30px;
   }
 
   .list.col-sm-12.col-md-6 {
     padding: 0;
+    margin-top: 20px;
     bottom: 0;
-    right: 15px;
   }
 
   blockquote:before {
     position: relative;
     left: 40px;
+    top: 25px;
+    font-size: 100px;
   }
 
   blockquote:after {
     position: relative;
     float: right;
-    right: 60px;
-    bottom: 130px;
+    right: 30px;
+    bottom: 65px;
+    font-size: 100px;
   }
 
   cite {
+    text-align: center;
     position: relative;
     left: 80px;
-    bottom: 115px;
+    bottom: 60px;
     width: 80%;
+    font-size: 20px;
   }
   /*Gallery section*/
 
   .the-gallery-section {
     position: relative;
-    left: 77px;
-    width: 87%;
-    margin-bottom: 0;
+    left: 12%;
+    width: 75%;
+    margin-bottom: 10%;
   }
 
   .img-wrapper-first {
