@@ -618,9 +618,18 @@
     position: relative;
     left: 4%;
   }
+
+  .menu-heading {
+    font-size: 22px;
+  }
+
+  .menu-description {
+    font-size: 18px;
+  }
   .menu-price {
     text-align: center;
     padding: 0;
+    font-size: 22px;
   }
 
   .subheading-wrapper-about-us {
@@ -630,17 +639,13 @@
 
   /*Featured dishes section*/
 
-  /* #carouselIndicators {
-    position: relative;
-  } */
-
   div.subheading-wrapper {
     height: 30px;
   }
 
   .featured-dishes-section {
-    width: 75%;
-    /* right: 1%; */
+    width: 74.5%;
+    right: 1%;
   }
 
   /*About us section*/
@@ -652,7 +657,7 @@
   .about-us-section {
     width: 84% !important;
     position: relative;
-    left: 1%;
+    left: 2%;
   }
 
   .about-us-section .subheading-wrapper {
@@ -661,7 +666,7 @@
   }
 
   .heading-about-us.container {
-    padding: 20px 0px 20px 25px;
+    padding: 20px 0px 20px 3%;
   }
 
   div.info-about-us.container.row {
