@@ -862,11 +862,16 @@
     position: relative;
     width: 100%;
   }
+
+  .menu-div.two {
+    padding-right: 30px !important;
+  }
   .menu-courses {
     margin: 0;
-    padding-left: 50px;
     justify-content: center;
     margin-top: 10%;
+    padding-left: 0px !important;
+    padding-right: 0 !important;
   }
   .menu-heading {
     font-size: 25px;
@@ -884,14 +889,13 @@
   .menu-price {
     text-align: center;
     font-size: 25px;
-
-    padding: 0;
+    padding-left: 50px;
   }
   /*Featured dishes section*/
 
   .featured-dishes-section {
     position: relative;
-    width: 76%;
+    width: 78%;
   }
 
   .subheading-wrapper h4 {
@@ -968,6 +972,7 @@
     padding: 0;
     margin-top: 20px;
     bottom: 0;
+    padding-left: 30px;
   }
 
   blockquote:before {
@@ -997,8 +1002,8 @@
 
   .the-gallery-section {
     position: relative;
-    left: 14%;
-    width: 72%;
+    left: 11%;
+    width: 78%;
     margin-bottom: 10%;
   }
 
@@ -1008,10 +1013,16 @@
     object-fit: contain;
   }
 
-  .subheading-wrapper .gallery-hr hr {
+  .img-wrapper-first svg.bi.bi-search {
+    position: absolute;
+    top: 100%;
+  }
+
+  .gallery-hr {
     position: relative;
-    left: 55px;
-    bottom: 5px;
+    width: 20%;
+    left: 220px;
+    bottom: 37px;
   }
 
   /*Scroll to top*/
@@ -1026,7 +1037,7 @@
   }
 
   .footer div.container.row {
-    padding: 0 5%;
+    padding: 0 1.5%;
   }
 
   .footer .brand-col h5 {
