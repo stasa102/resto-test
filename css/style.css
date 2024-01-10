@@ -16,14 +16,13 @@ html {
   background-color: transparent !important;
 }
 
-/* Section: Navbar */
+/* section: Navbar */
 .navbar-brand {
   font-family: var(--styleScriptFont);
   font-weight: 600;
   font-style: italic;
   font-stretch: expanded;
   letter-spacing: 3px;
-  font-size: 50px;
   color: #424141;
 }
 
@@ -61,7 +60,6 @@ a.nav-link:hover {
 }
 
 .navbar-nav {
-  font-size: x-large;
   min-height: 100%;
   text-align: center;
   z-index: 100;
@@ -102,10 +100,6 @@ a.nav-link:hover {
   border-radius: 100%;
 }
 
-/* div.col-8 {
-  width: 35%;
-} */
-
 .heading,
 .description {
   position: absolute;
@@ -118,7 +112,6 @@ a.nav-link:hover {
 
 .heading {
   font-family: var(--styleScriptFont);
-  font-size: calc(3em + 1vw);
   font-weight: 600;
   top: 45%;
   transform: translate(-50%, -50%);
@@ -127,7 +120,6 @@ a.nav-link:hover {
 .description {
   font-family: var(--cormorantFont);
   font-weight: 600;
-  font-size: calc(0.3em + 1vw);
   top: 60%;
 }
 
@@ -135,12 +127,15 @@ a.nav-link:hover {
 
 .the-menu {
   position: relative;
+  right: 1%;
   padding-top: 0 !important;
 }
 
 .menu-course-btn {
   position: relative;
   left: 15px;
+  font-family: var(--cormorantFont);
+  letter-spacing: 2px;
 }
 .menu-section {
   padding-bottom: 5%;
@@ -156,11 +151,20 @@ a.nav-link:hover {
 .menu {
   font-family: var(--cormorantFont);
   font-size: large;
-  padding: 15px 20px 20px 20px;
+  padding: 15px 20px 25px 20px;
   color: var(--white);
   background-color: var(--orange);
   mask-clip: content-box;
   position: absolute;
+}
+
+.triangle {
+  border-left: 85px solid transparent;
+  border-right: 85px solid transparent;
+  border-bottom: 15px solid var(--white);
+  position: relative;
+  top: 56px;
+  overflow: hidden;
 }
 
 .menu-courses {
@@ -198,10 +202,6 @@ a.nav-link:hover {
   padding-left: 30px;
 }
 
-.px-5 {
-  padding-right: 1rem !important;
-}
-
 .menu-price {
   text-align: center;
   font-size: 25px;
@@ -217,15 +217,6 @@ a.nav-link:hover {
 .line {
   position: relative;
   top: 45px;
-}
-
-.triangle {
-  border-left: 85px solid transparent;
-  border-right: 85px solid transparent;
-  border-bottom: 15px solid var(--white);
-  position: relative;
-  top: 45px;
-  overflow: hidden;
 }
 
 /*view all menu btn*/
@@ -269,7 +260,6 @@ a.nav-link:hover {
 /* Featured-dishes section */
 
 .featured-dishes-section {
-  width: 70%;
   position: relative;
   padding-bottom: 10%;
   margin-top: 5%;
@@ -286,9 +276,7 @@ a.nav-link:hover {
 }
 
 h4 {
-  font-size: 30px;
   font-weight: 600;
-  position: relative;
 }
 
 .featured-dishes-line-hr hr {
@@ -376,9 +364,10 @@ h4 {
 /*about-us-section */
 
 #about-us {
-  width: 78%;
   position: relative;
   padding-bottom: 2%;
+  color: var(--lighterGrey);
+  font-family: var(--cormorantFont);
 }
 
 .blockquote {
@@ -387,16 +376,11 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  display: inline;
-  overflow-wrap: break-word;
 }
 blockquote {
-  font-family: var(--styleScriptFont);
-  font-weight: 100;
   font-size: 30px;
   line-height: 1;
   position: relative;
-  margin: 0px;
 }
 
 blockquote:before,
@@ -411,31 +395,23 @@ blockquote:after {
 blockquote:before {
   content: "“";
   position: relative;
-  left: 50px;
+  /* left: 50px; */
 }
 
 blockquote:after {
   content: "”";
   position: relative;
-  float: right;
-  bottom: 100px;
+  /* float: right;
+  bottom: 100px; */
 }
 
 cite {
   width: fit-content;
-  font-size: 30px;
   display: flex;
   font-family: var(--diphylleiaFont);
   line-height: 1.5;
   position: relative;
   text-align: center;
-  left: 18%;
-  bottom: 120px;
-}
-
-.about-us-section {
-  color: var(--lighterGrey);
-  font-family: var(--cormorantFont);
 }
 
 .about-us-line-hr hr {
@@ -449,15 +425,9 @@ cite {
   padding: 20px 0px;
 }
 
-.about-us-section .list {
-  display: flex;
-  justify-content: center;
-}
-
-.list.col-sm-12.col-md-6 {
+/* .list.col-sm-12.col-md-6 {
   position: relative;
-  padding-top: 20px;
-}
+} */
 
 .list.col-sm-12.col-md-6 ul {
   list-style: none;
@@ -485,11 +455,6 @@ hr.about-us-hr {
 
 .second.col-sm-12.col-md-6 {
   padding-left: 40px;
-}
-
-.about-us-section div.subheading-wrapper {
-  padding-bottom: 0;
-  margin-bottom: 70px;
 }
 
 /*Gallery section*/

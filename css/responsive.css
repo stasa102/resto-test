@@ -1,21 +1,41 @@
 @media screen and (max-width: 576.99px) {
-  div.subheading-wrapper {
-    margin-bottom: 40px;
-    height: 30px;
+  h4 {
+    font-size: 20px;
+  }
+
+  /*Navbar*/
+
+  .navbar-brand {
+    font-size: 30px;
   }
 
   /*Menu section*/
 
-  div.row.menu-courses {
+  .menu-section {
+    margin-bottom: 20%;
+  }
+
+  .menu-courses {
     width: 90%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    position: relative;
+    left: 12%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 
-  div.menu-price {
-    text-align: center;
+  .two {
+    padding-right: 30px;
   }
 
-  div.menu-div {
-    padding-left: 0;
+  .menu-heading,
+  .menu-price {
+    font-size: 20px;
+  }
+
+  .menu-description {
+    font-size: 15px;
   }
 
   .menu-btn div.row {
@@ -26,18 +46,45 @@
     padding-left: 0px !important;
   }
 
-  /*About us section*/
-
-  div.info-about-us.container.row,
-  .heading-about-us.container {
-    padding-left: 6px;
+  .triangle {
+    top: 50px;
   }
+
+  /*Featured  dishes section*/
+
+  .subheading-wrapper {
+    height: 30px;
+    margin-bottom: 20px !important;
+  }
+
+  .featured-dishes-section {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 10%;
+    width: 90%;
+  }
+
+  .card {
+    width: 50%;
+    margin-top: 20px;
+  }
+  img.card-img-top {
+    height: 200px;
+  }
+
+  p.course-name,
+  span.course-price {
+    font-size: 18px !important;
+  }
+
+  /*About us section*/
 
   .about-us-section {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    padding: 7%;
+    width: 85%;
+    margin-bottom: 10%;
   }
 
   .first.col-sm-12.col-md-4 {
@@ -47,17 +94,12 @@
     padding: 0;
   }
 
-  .about-us-section h4 {
-    left: 6px;
-  }
-
   div.blockquote {
-    height: 100px;
+    height: 150px;
   }
 
   blockquote:after {
     font-size: 100px;
-    position: relative;
     float: right;
     bottom: 90px;
     right: 10px;
@@ -68,9 +110,9 @@
     left: 50px;
   }
   cite {
-    justify-content: center;
     bottom: 80px;
-    font-size: medium;
+    left: 19%;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -84,12 +126,10 @@
     bottom: 30px;
   }
 
-  .list.col-sm-12.col-md-6 {
+  .info-about-us .list {
+    padding-left: 6.5%;
     padding-top: 10%;
-  }
-
-  .about-us-section div.subheading-wrapper {
-    margin-bottom: 40px;
+    padding-bottom: 10%;
   }
 
   /*Gallery section*/
@@ -112,37 +152,6 @@
     height: 16em;
   }
 
-  /*Featured  dishes section*/
-
-  .featured-dishes-section .carousel {
-    padding-left: 3%;
-    padding-right: 3%;
-    margin-top: 10%;
-    width: 90%;
-  }
-  .card {
-    width: 50%;
-    margin-top: 20px;
-  }
-  .card-img-top {
-    height: 150px;
-  }
-
-  .course-info .course-name,
-  .course-price,
-  .course-likes,
-  .course-likes-num {
-    font-size: calc(0.4em + 1vw);
-  }
-
-  .featured-dishes-line-hr {
-    width: 20%;
-  }
-
-  .featured-dishes-line-hr hr {
-    width: 100%;
-  }
-
   /*Footer*/
 
   .footer-col {
@@ -150,7 +159,19 @@
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768.99px) {
-  /*Navbar section*/
+  h4 {
+    font-size: 20px;
+  }
+
+  .subheading-wrapper {
+    height: 30px;
+    margin-bottom: 40px !important;
+    width: 91%;
+    position: relative;
+    left: 3.5%;
+  }
+
+  /*Navbar*/
 
   .navbar-brand {
     font-size: 30px;
@@ -168,10 +189,27 @@
 
   /*Menu section*/
 
+  .menu-section {
+    margin-bottom: 20%;
+  }
+
+  .menu-courses {
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    position: relative;
+    left: 13%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .two {
+    padding-right: 30px;
+  }
+
   .menu-section.container {
     padding-left: 0 !important;
     position: relative;
-    right: 1%;
   }
 
   .menu-course-info {
@@ -212,11 +250,26 @@
     object-fit: cover;
   }
 
+  .menu-heading,
+  .menu-price {
+    font-size: 20px;
+  }
+
+  .menu-description {
+    font-size: 15px;
+  }
+
+  .triangle {
+    top: 50px;
+  }
+
   /* Featured dishes section*/
 
-  #carouselIndicators {
-    position: relative;
-    left: 2%;
+  .featured-dishes-section {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 10%;
+    width: 90%;
   }
 
   .course-info .course-name,
@@ -228,29 +281,16 @@
 
   .card {
     width: 50%;
-    padding-left: 20px;
-    /* margin-top: 20px; */
+    margin-top: 20px;
   }
 
-  .featured-dishes-section img.card-img-top {
-    height: 150px;
+  img.card-img-top {
+    height: 200px;
   }
 
-  div.card-wrapper {
-    width: 97%;
-    position: relative;
-    left: 2%;
-  }
-
-  div.subheading-wrapper {
-    width: 91%;
-    position: relative;
-    height: 30px;
-    left: 4%;
-  }
-
-  .card-wrapper {
-    padding-bottom: 75px;
+  p.course-name,
+  span.course-price {
+    font-size: 18px !important;
   }
 
   /*About us section*/
@@ -260,16 +300,10 @@
   }
 
   .about-us-section {
-    padding: 0;
-    width: 76%;
-    position: relative;
-    text-align: justify;
-  }
-
-  .about-us-section .subheading-wrapper {
-    position: relative;
-    height: 10px;
-    width: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 75%;
   }
 
   .heading-about-us.container {
@@ -279,47 +313,36 @@
   .about-us-line-hr hr {
     width: 20%;
   }
-  cite {
-    text-align: center;
-    justify-content: center;
-    font-size: calc(0.4em + 1vw);
-    top: 20px;
+
+  div.blockquote {
+    height: 150px;
   }
-  blockquote {
-    font-family: var(--styleScriptFont);
-    font-weight: 100;
-    font-size: 30px;
-    line-height: 1;
-    position: relative;
-    margin-top: 20px;
+
+  blockquote:after {
+    font-size: 100px;
+    float: right;
+    bottom: 90px;
+    right: 10px;
   }
+
   blockquote:before {
-    content: "“";
-    left: 60px;
+    font-size: 100px;
+    left: 50px;
+  }
+  cite {
+    bottom: 80px;
+    left: 19%;
+    font-size: 20px;
+    text-align: center;
   }
 
-  blockquote:after {
-    content: "”";
-    top: 100px;
-    left: 80%;
+  .info-about-us .list {
+    padding-left: 25px;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
-
-  blockquote:before,
-  blockquote:after {
-    position: absolute;
-    color: #dedede;
-    font-size: 6rem;
-  }
-
   .second.col-sm-12.col-md-6 {
     padding: 0;
-  }
-
-  .list.col-sm-12.col-md-6 {
-    padding-left: 0;
-    padding-top: 80px;
-    position: relative;
-    bottom: 20px;
   }
 
   /*Gallery section*/
@@ -330,11 +353,6 @@
     width: 76%;
     position: relative;
     left: 12%;
-  }
-
-  .the-gallery-section div.subheading-wrapper {
-    left: 0;
-    height: 30px;
   }
 
   .img-wrapper-first {
@@ -371,6 +389,22 @@
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992.99px) {
+  .navbar-brand {
+    font-size: 40px;
+  }
+  .menu-section {
+    margin-bottom: 10%;
+  }
+  .menu-courses {
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    position: relative;
+    left: 13%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
   .menu-section.container {
     padding-left: 0 !important;
     position: relative;
@@ -380,10 +414,6 @@
     font-size: 12px;
     font-family: var(--cormorantFont);
     letter-spacing: 2px;
-  }
-
-  .menu-courses {
-    left: 6%;
   }
 
   div.menu-btn {
@@ -416,6 +446,10 @@
     position: relative;
     left: 2px;
   }
+
+  .triangle {
+    top: 50px;
+  }
   .down {
     left: 10px;
   }
@@ -426,27 +460,14 @@
     width: 100%;
   }
 
-  .img-wrapper img {
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /*Featured dishes section*/
-
-  /* .img-wrapper-first {
-    height: 14em;
-    width: auto;
-    object-fit: contain;
-  } */
-
-  img.card-img-top {
-    height: 235px;
-    overflow: hidden;
-  }
+  /*Featured dishes*/
 
   .card {
-    height: 20em;
-    margin-bottom: 30px;
+    width: 50%;
+    margin-top: 20px;
+  }
+  img.card-img-top {
+    height: 250px;
   }
 
   p.course-name,
@@ -459,29 +480,15 @@
   }
 
   .featured-dishes-section {
-    width: 70%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 10%;
+    width: 85%;
   }
 
-  .featured-dishes-section .subheading-wrapper {
-    position: relative;
-
-    left: 0;
-    height: 30px;
-  }
-
-  .featured-dishes-section .subheading-wrapper h4 {
-    font-size: 22px;
-  }
-
-  .featured-dishes-section .subheading-wrapper hr {
-    position: relative;
-    bottom: 50px;
-    left: 50%;
-  }
-
-  .course-info .course-name,
-  .course-info .course-price {
-    font-size: 18px;
+  p.course-name,
+  span.course-price {
+    font-size: 19px !important;
   }
 
   .course-likes .course-likes-num {
@@ -490,33 +497,22 @@
 
   /*About us section*/
 
-  .about-us-section .subheading-wrapper-about-us h4 {
-    font-size: 22px;
+  .about-us-section {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 75%;
   }
+
   .about-us-line-hr hr {
     width: 20%;
     position: relative;
     bottom: 33px;
     left: 125px !important;
+    .heading-about-us.container {
+      padding: 10px 0px;
+    }
   }
-
-  #about-us {
-    width: 70%;
-    position: relative;
-    left: 0.5%;
-  }
-
-  .about-us-section .subheading-wrapper {
-    position: relative;
-    left: 5px;
-    height: 30px;
-    margin-bottom: 50px !important;
-  }
-
-  .heading-about-us.container {
-    padding: 10px 0px;
-  }
-
   div.info-about-us.container.row {
     height: 250px;
     width: 100%;
@@ -538,29 +534,34 @@
     padding-top: 10px;
   }
 
+  div.blockquote {
+    height: 250px;
+  }
+
   blockquote:before {
-    position: relative;
-    left: 10px;
-    top: 5px;
     font-size: 100px;
+    /* top: 50px; */
+    right: 40px;
   }
 
   blockquote:after {
-    position: relative;
-    float: right;
-    bottom: 60px;
-    left: 40px;
     font-size: 100px;
+    float: right;
+    left: 70px;
+    bottom: 60px;
   }
 
   cite {
-    text-align: center;
-    width: 100%;
-    position: relative;
-    left: 45px;
     bottom: 60px;
-    width: 90%;
-    font-size: 19px;
+    left: 10px;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .info-about-us .list {
+    padding-left: 25px;
+    padding-top: 5%;
+    padding-bottom: 10%;
   }
   /*Gallery section*/
 
@@ -578,17 +579,6 @@
     position: relative;
     left: 25px;
     padding-right: 40px;
-  }
-
-  div.subheading-wrapper {
-    position: relative;
-    left: 25px;
-    margin-bottom: 60px !important;
-    height: 30px;
-  }
-
-  .the-gallery-section .subheading-wrapper h4 {
-    font-size: 22px;
   }
 
   .gallery-hr {
@@ -639,11 +629,6 @@
     right: 15px;
   }
 
-  div.subheading-wrapper {
-    margin-bottom: 40px;
-    height: 30px;
-  }
-
   .footer-content {
     width: 85%;
     left: 5%;
@@ -665,6 +650,9 @@
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1140.99px) {
+  .navbar-brand {
+    font-size: 40px;
+  }
   .navbar-nav {
     font-size: 20px;
   }
@@ -705,23 +693,22 @@
     font-size: 22px;
   }
 
-  .subheading-wrapper-about-us {
-    position: relative;
-    left: 3%;
+  .triangle {
+    top: 50px;
   }
 
   /*Featured dishes section*/
 
-  div.subheading-wrapper {
-    height: 30px;
-  }
-
-  div.subheading-wrapper h4 {
-    font-size: 25px;
-  }
-
   .featured-dishes-section {
-    width: 76%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 10%;
+    width: 85%;
+  }
+
+  p.course-name,
+  span.course-price {
+    font-size: 20px !important;
   }
 
   /*About us section*/
@@ -731,26 +718,17 @@
   }
 
   .about-us-section {
-    width: 84% !important;
-    position: relative;
-    left: 2%;
-  }
-
-  .subheading-wrapper-about-us h4 {
-    font-size: 25px;
-  }
-  .heading-about-us.container {
-    padding: 20px 0px 20px 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 80%;
   }
 
   div.info-about-us.container.row {
     height: 200px;
-    width: 90%;
     position: relative;
-    left: 25px;
     display: flex;
     justify-content: space-around;
-    padding-left: 0;
   }
 
   .first hr {
@@ -841,10 +819,6 @@
     right: 25px;
   }
 
-  div.subheading-wrapper {
-    margin-bottom: 40px;
-  }
-
   .brand-col h5 .brand {
     font-size: 45px;
   }
@@ -855,6 +829,9 @@
   }
 }
 @media screen and (min-width: 1141px) and (max-width: 1200.99px) {
+  .navbar-brand {
+    font-size: 40px;
+  }
   /*Menu section*/
 
   .menu-div {
@@ -891,21 +868,17 @@
     font-size: 25px;
     padding-left: 50px;
   }
+
+  .triangle {
+    top: 50px;
+  }
   /*Featured dishes section*/
 
   .featured-dishes-section {
-    position: relative;
-    width: 78%;
-  }
-
-  .subheading-wrapper h4 {
-    font-size: 30px;
-  }
-
-  .subheading-wrapper .featured-dishes-line-hr hr {
-    position: relative;
-    left: 120px;
-    bottom: 55px;
+    padding-left: 1%;
+    padding-right: 3%;
+    margin-top: 10%;
+    width: 100%;
   }
 
   img.card-img-top {
@@ -916,14 +889,18 @@
     height: auto;
   }
 
+  p.course-name,
+  span.course-price {
+    font-size: 20px !important;
+  }
+
   /*About us section*/
 
   .about-us-section {
-    margin-top: 10%;
-    width: 72%;
-    position: relative;
-
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 80%;
   }
   .about-us-line-hr hr {
     width: 20%;
@@ -931,26 +908,10 @@
     bottom: 29px;
   }
 
-  .about-us-section .subheading-wrapper-about-us {
-    position: relative;
-    margin-bottom: 5%;
-  }
-
-  .subheading-wrapper-about-us h4 {
-    font-size: 30px;
-    font-weight: 600;
-    position: relative;
-    margin-bottom: 0;
-  }
-
   .subheading-wrapper-about-us .about-us-line-hr hr {
     position: relative;
     left: 170px;
     bottom: 35px;
-  }
-
-  .heading-about-us.container {
-    padding: 0px 0px 20px 0px;
   }
 
   div.info-about-us.container.row {
@@ -1080,9 +1041,6 @@
   h6.menu {
     font-size: 25px;
   }
-  .triangle {
-    top: 52px;
-  }
 
   .menu-price {
     text-align: center;
@@ -1102,40 +1060,24 @@
     font-size: 20px;
   }
 
-  .menu-div {
-    padding: 0;
-  }
-
   .menu-course-btn {
-    padding: 10px 25px;
     font-size: 20px;
-    font-family: var(--cormorantFont);
-    letter-spacing: 2px;
-  }
-
-  div.menu-btn {
-    display: flex;
-    justify-content: space-evenly;
+    padding: 10px 25px;
   }
 
   .down {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     left: 10px;
   }
 
   /*Featured dishes*/
 
   .featured-dishes-section {
-    width: 74%;
-    position: relative;
-    right: 1%;
-    padding-bottom: 10%;
-    margin-top: 5%;
-  }
-
-  .subheading-wrapper h4 {
-    font-size: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 10%;
+    width: 90%;
   }
 
   .subheading-wrapper .featured-dishes-line-hr hr {
@@ -1148,15 +1090,19 @@
     bottom: 70px;
   }
 
-  /*About us*/
-  .about-us-section {
-    width: 74% !important;
-    margin-bottom: 10%;
+  p.course-name,
+  span.course-price {
+    font-size: 22px !important;
   }
 
-  .heading-about-us.container {
-    padding-left: 0;
+  /*About us*/
+  .about-us-section {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 80%;
   }
+
   .heading-about-us.container h1 {
     font-size: 50px;
     padding-bottom: 30px;
@@ -1195,10 +1141,6 @@
     bottom: 100px;
     left: 80px;
     text-align: center;
-  }
-
-  .subheading-wrapper-about-us h4 {
-    font-size: 30px;
   }
 
   /*gallery section*/
