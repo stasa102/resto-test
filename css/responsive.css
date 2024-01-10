@@ -665,6 +665,9 @@
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1140.99px) {
+  .navbar-nav {
+    font-size: 20px;
+  }
   /*Menu section*/
   .menu-div {
     margin-top: 10%;
@@ -713,9 +716,12 @@
     height: 30px;
   }
 
+  div.subheading-wrapper h4 {
+    font-size: 25px;
+  }
+
   .featured-dishes-section {
-    width: 74.5%;
-    right: 1%;
+    width: 76%;
   }
 
   /*About us section*/
@@ -730,11 +736,9 @@
     left: 2%;
   }
 
-  .about-us-section .subheading-wrapper {
-    position: relative;
-    left: 25px;
+  .subheading-wrapper-about-us h4 {
+    font-size: 25px;
   }
-
   .heading-about-us.container {
     padding: 20px 0px 20px 3%;
   }
@@ -839,6 +843,15 @@
 
   div.subheading-wrapper {
     margin-bottom: 40px;
+  }
+
+  .brand-col h5 .brand {
+    font-size: 45px;
+  }
+
+  div.container.row .footer-col,
+  .brand-col h5 {
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 1141px) and (max-width: 1200.99px) {
