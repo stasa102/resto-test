@@ -36,10 +36,18 @@
     />
     <!-- local css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link
       href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css"
       rel="stylesheet"
     />
+
+    <style>
+      .padd {
+        padding-left: 0 !important;
+        padding-right: 30px;
+      }
+    </style>
   </head>
   <body>
     <div>
@@ -197,8 +205,8 @@
           <span class="triangle"></span>
         </div>
         <div class="row menu-courses">
-          <div class="col-xs-1 col-xxl-6 menu-div">
-            <div class="row">
+          <div class="col-xs-1 col-xxl-6 menu-div one">
+            <div class="row one">
               <div class="menu-course-info col-6">
                 <h5 class="menu-heading">Voluptate cillum fugiat.</h5>
                 <p class="menu-description">
@@ -235,7 +243,7 @@
               <div class="menu-price col-2"><b>$30</b></div>
             </div>
           </div>
-          <div class="col-xs-1 col-xxl-6 menu-div">
+          <div class="col-xs-1 col-xxl-6 menu-div two padd">
             <div class="row">
               <div class="menu-course-info col-6">
                 <h5 class="menu-heading">Arcu pede enim justo.</h5>
@@ -407,7 +415,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="card col-6 col-lg-3">
                   <div class="img-wrapper">
                     <img
@@ -606,7 +613,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card col-6 col-lg-3">
                   <div class="img-wrapper">
                     <img
                       src="assets/featured-dishes/slide-2/card-8.jpg"
@@ -766,7 +773,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card col-6 col-lg-3">
                   <div class="img-wrapper">
                     <img
                       src="assets/featured-dishes/slide-3/card-12.jpg"
@@ -924,7 +931,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card col-6 col-lg-3">
                   <div class="img-wrapper">
                     <img
                       src="assets/featured-dishes/slide-4/card-16.jpg"
@@ -986,7 +993,7 @@
             scrambled it to make a type specimen book.
             <strong>It has survived not only five centuries</strong>, but also
             the leap into electronic typesetting.
-            <hr />
+            <hr class="about-us-hr" />
           </div>
 
           <div class="second col-sm-12 col-md-6">
@@ -1166,8 +1173,9 @@
             <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
             <svg
               fill="#fff"
-              height="20px"
-              width="30px"
+              height="25px"
+              opacity="0.7"
+              width="25px"
               version="1.1"
               id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
