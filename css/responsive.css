@@ -382,12 +382,28 @@
     letter-spacing: 2px;
   }
 
+  .menu-courses {
+    left: 6%;
+  }
+
   div.menu-btn {
     display: flex;
     justify-content: space-evenly;
   }
 
+  .two {
+    padding-right: 30px !important;
+  }
+
+  .menu-heading {
+    font-size: 20px;
+  }
+
+  .menu-description {
+    font-size: 15px;
+  }
   .menu-price {
+    font-size: 20px;
     text-align: center;
   }
 
@@ -417,19 +433,20 @@
 
   /*Featured dishes section*/
 
-  .img-wrapper-first {
+  /* .img-wrapper-first {
     height: 14em;
     width: auto;
     object-fit: contain;
-  }
+  } */
 
   img.card-img-top {
-    height: 140px;
+    height: 235px;
     overflow: hidden;
   }
 
   .card {
     height: 20em;
+    margin-bottom: 30px;
   }
 
   p.course-name,
@@ -442,28 +459,51 @@
   }
 
   .featured-dishes-section {
-    width: 83%;
+    width: 70%;
   }
 
   .featured-dishes-section .subheading-wrapper {
     position: relative;
+
     left: 0;
     height: 30px;
   }
 
+  .featured-dishes-section .subheading-wrapper h4 {
+    font-size: 22px;
+  }
+
+  .featured-dishes-section .subheading-wrapper hr {
+    position: relative;
+    bottom: 50px;
+    left: 50%;
+  }
+
+  .course-info .course-name,
+  .course-info .course-price {
+    font-size: 18px;
+  }
+
+  .course-likes .course-likes-num {
+    font-size: 16px;
+  }
+
   /*About us section*/
 
+  .about-us-section .subheading-wrapper-about-us h4 {
+    font-size: 22px;
+  }
   .about-us-line-hr hr {
     width: 20%;
     position: relative;
-    bottom: 30px;
-    left: 120px !important;
+    bottom: 33px;
+    left: 125px !important;
   }
 
-  .about-us-section {
-    width: 83%;
+  #about-us {
+    width: 70%;
     position: relative;
-    right: 2%;
+    left: 0.5%;
   }
 
   .about-us-section .subheading-wrapper {
@@ -481,7 +521,6 @@
     height: 250px;
     width: 100%;
     position: relative;
-    left: 5px;
     display: flex;
     justify-content: space-around;
     padding-left: 0;
@@ -492,25 +531,25 @@
     margin: 30px 0;
   }
   .second.col-sm-12.col-md-6 {
-    padding-left: 10px;
+    padding-left: 15px;
   }
   .list.col-sm-12.col-md-6 {
-    padding: 0;
+    padding-left: 5%;
     padding-top: 10px;
   }
 
   blockquote:before {
     position: relative;
     left: 10px;
-    bottom: 10px;
+    top: 5px;
     font-size: 100px;
   }
 
   blockquote:after {
     position: relative;
     float: right;
-    bottom: 80px;
-    left: 20px;
+    bottom: 60px;
+    left: 40px;
     font-size: 100px;
   }
 
@@ -519,7 +558,7 @@
     width: 100%;
     position: relative;
     left: 45px;
-    bottom: 80px;
+    bottom: 60px;
     width: 90%;
     font-size: 19px;
   }
@@ -527,9 +566,9 @@
 
   .the-gallery-section {
     margin: 0;
-    width: 87%;
+    width: 74%;
     position: relative;
-    left: 6%;
+    left: 13%;
     margin-bottom: 10%;
   }
 
@@ -548,16 +587,33 @@
     height: 30px;
   }
 
+  .the-gallery-section .subheading-wrapper h4 {
+    font-size: 22px;
+  }
+
+  .gallery-hr {
+    position: relative;
+    width: 20%;
+    left: 165px;
+    bottom: 31px;
+  }
+
   .img-wrapper-first svg.bi.bi-search {
     position: absolute;
     left: 40%;
-    top: 60%;
+    top: 200%;
   }
 
   .img-wrapper svg.bi.bi-search {
     position: absolute;
     left: 40%;
     top: 38%;
+  }
+
+  .img-wrapper-first {
+    height: 4em;
+    width: auto;
+    object-fit: contain;
   }
 
   div.container.row {
@@ -592,6 +648,20 @@
     width: 85%;
     left: 5%;
     position: relative;
+  }
+
+  div.container.row .footer-col,
+  .brand-col h5 {
+    font-size: 15px;
+  }
+
+  .footer div.row {
+    justify-content: flex-start;
+    padding-left: 7%;
+  }
+
+  .brand-col h5 .brand {
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1140.99px) {
