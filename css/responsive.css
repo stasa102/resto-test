@@ -1086,6 +1086,11 @@
 
   .menu-price {
     text-align: center;
+    padding-left: 40px;
+  }
+
+  .two {
+    padding-right: 30px !important;
   }
 
   .menu-heading,
@@ -1121,9 +1126,12 @@
 
   /*Featured dishes*/
 
-  #carouselIndicators {
-    width: 90%;
-    /* left: 1%; */
+  .featured-dishes-section {
+    width: 74%;
+    position: relative;
+    right: 1%;
+    padding-bottom: 10%;
+    margin-top: 5%;
   }
 
   .subheading-wrapper h4 {
@@ -1142,8 +1150,8 @@
 
   /*About us*/
   .about-us-section {
-    width: 90%;
-    padding: 0 30px 0 60px;
+    width: 74% !important;
+    margin-bottom: 10%;
   }
 
   .heading-about-us.container {
@@ -1161,8 +1169,7 @@
   }
 
   .list.col-sm-12.col-md-6 {
-    padding-left: 0;
-    padding-right: 80px;
+    padding-left: 25px;
     position: relative;
     top: 20px;
     height: max-content;
@@ -1198,8 +1205,8 @@
 
   .the-gallery-section {
     position: relative;
-    left: 10%;
-    width: 80%;
+    width: 74%;
+    left: 12%;
     margin-bottom: 10%;
   }
 
