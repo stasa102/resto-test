@@ -83,6 +83,7 @@ a.nav-link:hover {
   border-top: 2px solid var(--lighterGrey);
   border-bottom: 2px solid var(--lighterGrey);
   border-radius: 0;
+  right: 10px;
 }
 
 .navbar-toggler:before,
@@ -105,7 +106,7 @@ a.nav-link:hover {
   --bs-navbar-toggler-focus-width: 0;
 }
 
-button:hover {
+button.navbar-toggler:hover {
   color: var(--lighterGrey);
 }
 
