@@ -1,6 +1,7 @@
 :root {
   --orange: #f34949;
   --lighterGrey: #565656;
+  --lightestGrey: #cccccc;
   --white: #ffffff;
   --styleScriptFont: "Style Script", cursive;
   --cormorantFont: "Cormorant", serif;
@@ -300,11 +301,9 @@ a.nav-link:hover {
   left: 0%;
 }
 
-#about-us .first {
-  margin-top: 5%;
-}
+#about-us .first,
 #about-us .second {
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 .info-about-us .list {
@@ -338,7 +337,7 @@ blockquote {
 blockquote:before,
 blockquote:after {
   /* position: absolute; */
-  color: #dedede;
+  color: var(--lightestGrey);
   font-size: 10rem;
   width: 10%;
   height: 10%;
@@ -455,27 +454,31 @@ svg.bi.bi-search {
   z-index: 50;
 }
 #scroll-to-top:hover {
-  background-color: #ff6868;
+  background-color: var(--orange);
 }
 
 /**/
 
 .footer {
   background-color: #424141;
-  color: #dedede;
+  color: var(--lightestGrey);
   font-family: var(--cormorantFont);
 }
 
 .pixelhint-link:hover {
   cursor: pointer;
-  color: #f34949;
+  color: var(--orange);
 }
 
 .list-unstyled a.links {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 .list-unstyled a.links:hover {
-  color: #f34949;
+  color: var(--orange);
+}
+
+.list-unstyled a.navbar-brand:hover {
+  color: var(--lightestGrey) !important;
 }

@@ -197,7 +197,6 @@
     font-size: 30px;
   }
 }
-
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .subheading-wrapper h4 {
     font-size: 20px;
@@ -367,15 +366,204 @@
     overflow: hidden;
   }
 
-  .img-wrapper-first:hover svg.bi.bi-search {
+  /* .img-wrapper-first:hover svg.bi.bi-search {
     left: 45%;
     top: 40%;
   }
 
   .img-wrapper-row:hover svg.bi.bi-search {
     left: 45%;
-    /* top: 10px; ???????????????? */
+    /* top: 10px; ???????????????? }*/
+
+  /*Footer Section*/
+
+  #footer ul.list-unstyled li {
+    font-size: 17px;
   }
+
+  #footer ul.list-unstyled .rights {
+    font-size: 12px;
+  }
+
+  #footer ul.list-unstyled li a.navbar-brand {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+  .subheading-wrapper h4 {
+    font-size: 25px;
+  }
+
+  /*Navbar Section*/
+  a.navbar-brand {
+    font-size: 40px;
+    padding: var(--bs-navbar-toggler-padding-y)
+      var(--bs-navbar-toggler-padding-x);
+  }
+
+  a.nav-link {
+    font-size: 18px;
+  }
+
+  /*Carousel Section*/
+
+  #carousel .heading {
+    font-size: 45px;
+    top: 50%;
+  }
+
+  #carousel .description {
+    font-size: 20px;
+    top: 60%;
+  }
+
+  /*Menu Section*/
+
+  .menu-courses {
+    margin-top: 15%;
+  }
+
+  .menu-heading,
+  .menu-price {
+    font-size: 20px;
+  }
+
+  .menu-description {
+    font-size: 10px;
+  }
+
+  .menu-btn {
+    margin-bottom: 25%;
+  }
+
+  .menu-course-btn {
+    font-size: 15px;
+    padding: 5px 24px 5px 13px;
+  }
+
+  .arrow {
+    border-width: 0 1px 1px 0;
+  }
+
+  /*Featured dishes Section*/
+
+  #dishes hr {
+    width: 80%;
+    left: 230px;
+    bottom: 30px;
+  }
+
+  .card {
+    margin-bottom: 10%;
+  }
+  .card-body {
+    padding: 0;
+    margin-top: 5%;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+
+  .course-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .course-name,
+  .course-price {
+    font-size: 20px;
+    margin-bottom: 0;
+    padding: 0px 2px;
+  }
+
+  .course-likes-num {
+    font-size: 15px;
+  }
+
+  svg.heart {
+    width: 15px;
+    height: 15px;
+  }
+
+  /*About us Section*/
+
+  #about-us {
+    margin-bottom: 10%;
+  }
+
+  #about-us hr {
+    width: 20%;
+    position: relative;
+    left: 140px;
+    bottom: 30px;
+  }
+
+  #about-us .first hr.about-us-hr {
+    width: 100%;
+    position: relative;
+    top: 10px;
+    left: 0%;
+  }
+
+  .heading-about-us h1 {
+    font-size: 35px;
+  }
+
+  .info-about-us {
+    font-size: 15px;
+  }
+
+  .info-about-us .list {
+    margin-top: 0;
+  }
+
+  .blockquote {
+    margin-top: 2%;
+  }
+
+  blockquote:before {
+    font-size: 100px;
+    top: 15px;
+  }
+
+  blockquote:after {
+    font-size: 100px;
+    top: 40px;
+  }
+
+  cite {
+    font-size: 20px;
+    top: 40px;
+    right: 15px;
+  }
+
+  /*Gallery Section*/
+
+  #gallery hr {
+    width: 20%;
+    position: relative;
+    left: 175px;
+    bottom: 29px;
+  }
+
+  #gallery .row {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 15%;
+  }
+
+  /* .img-wrapper-first:hover svg.bi.bi-search {
+    left: 45%;
+    top: 40%;
+  }
+
+  .img-wrapper-row:hover svg.bi.bi-search {
+    left: 45%;
+    top: 50px;
+  } */
 
   /*Footer Section*/
 
