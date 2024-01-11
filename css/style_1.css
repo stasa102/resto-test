@@ -100,6 +100,7 @@ a.nav-link:hover {
 
 .heading,
 .description {
+  text-align: center;
   position: absolute;
   left: 50%;
   color: var(--white);
@@ -111,14 +112,18 @@ a.nav-link:hover {
 .heading {
   font-family: var(--styleScriptFont);
   font-weight: 600;
-  top: 45%;
+  top: 40%;
   transform: translate(-50%, -50%);
+}
+.description::before,
+.description::after {
+  content: "-";
 }
 
 .description {
   font-family: var(--cormorantFont);
   font-weight: 600;
-  top: 60%;
+  top: 70%;
 }
 
 /**/
@@ -154,6 +159,7 @@ a.nav-link:hover {
 
 .menu-heading,
 .menu-price {
+  font-weight: bold;
   font-family: var(--cormorantFont);
   font-size: 30px;
 }
@@ -215,6 +221,11 @@ a.nav-link:hover {
   margin-top: 5%;
   font-family: var(--cormorantFont);
   color: var(--lighterGrey);
+}
+
+.course-name,
+.course-price {
+  font-weight: bold;
 }
 
 .card {
@@ -357,8 +368,9 @@ cite {
 }
 
 /**/
-.subheading-wrapper {
+.subheading-wrapper h4 {
   font-family: var(--cormorantFont);
+  font-weight: bolder;
 }
 #gallery hr {
   width: 20%;

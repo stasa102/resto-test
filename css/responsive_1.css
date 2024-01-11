@@ -1,4 +1,4 @@
-@media screen and (max-width: 576.99px) {
+@media screen and (max-width: 480px) {
   .subheading-wrapper h4 {
     font-size: 15px;
   }
@@ -22,11 +22,11 @@
   /*Carousel Section*/
 
   #carousel .heading {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   #carousel .description {
-    font-size: 8px;
+    font-size: 15px;
   }
 
   .carousel-indicators [data-bs-target] {
@@ -85,10 +85,11 @@
   }
   .card-body {
     padding: 0;
+    margin-top: 5%;
   }
 
   .card-img-top {
-    height: 100px;
+    height: 150px;
   }
 
   .course-info {
@@ -99,7 +100,7 @@
 
   .course-name,
   .course-price {
-    font-size: 10px;
+    font-size: 15px;
     margin-bottom: 0;
   }
 
@@ -109,12 +110,12 @@
   }
 
   .course-likes-num {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   svg.heart {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
   }
 
   /*About us Section*/
@@ -135,7 +136,7 @@
   }
 
   .info-about-us {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   blockquote:before {
@@ -149,7 +150,7 @@
   }
 
   cite {
-    font-size: 10px;
+    font-size: 12px;
     top: 30px;
   }
 
@@ -190,5 +191,203 @@
 
   #footer ul.list-unstyled .rights {
     font-size: 8px;
+  }
+
+  #footer ul.list-unstyled li a.navbar-brand {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .subheading-wrapper h4 {
+    font-size: 20px;
+  }
+  /*Navbar Section*/
+  a.navbar-brand {
+    font-size: 30px;
+    padding: var(--bs-navbar-toggler-padding-y)
+      var(--bs-navbar-toggler-padding-x);
+  }
+
+  a.nav-link {
+    font-size: 15px;
+  }
+
+  /*Carousel Section*/
+
+  #carousel .heading {
+    font-size: 50px;
+  }
+
+  #carousel .description {
+    font-size: 15px;
+    top: 65%;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+  }
+
+  /*Menu Section*/
+
+  .menu {
+    font-size: 18px;
+    padding: 10px 10px 20px 10px;
+  }
+
+  .triangle {
+    top: 40px;
+  }
+
+  .menu-courses {
+    margin-top: 25%;
+  }
+
+  .menu-heading,
+  .menu-price {
+    font-size: 22px;
+  }
+
+  .menu-description {
+    font-size: 14px;
+  }
+
+  .menu-btn {
+    margin-bottom: 25%;
+  }
+
+  .menu-course-btn {
+    font-size: 15px;
+    padding: 5px 24px 5px 13px;
+  }
+
+  .arrow {
+    border-width: 0 1px 1px 0;
+  }
+
+  /*Featured dishes Section*/
+
+  #dishes hr {
+    width: 50%;
+    left: 185px;
+    bottom: 30px;
+  }
+
+  .card {
+    margin-bottom: 10%;
+  }
+  .card-body {
+    padding: 0;
+    margin-top: 5%;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+
+  .course-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .course-name,
+  .course-price {
+    font-size: 20px;
+    margin-bottom: 0;
+    padding: 0px 2px;
+  }
+
+  .course-likes-num {
+    font-size: 15px;
+  }
+
+  svg.heart {
+    width: 15px;
+    height: 15px;
+  }
+
+  /*About us Section*/
+
+  #about-us {
+    margin-bottom: 10%;
+  }
+
+  #about-us hr {
+    width: 20%;
+    position: relative;
+    left: 110px;
+    bottom: 30px;
+  }
+
+  .heading-about-us h1 {
+    font-size: 32px;
+  }
+
+  .info-about-us {
+    font-size: 15px;
+  }
+
+  .blockquote {
+    margin-top: 5%;
+  }
+
+  blockquote:before {
+    font-size: 100px;
+    top: 20px;
+  }
+
+  blockquote:after {
+    font-size: 100px;
+    top: 30px;
+  }
+
+  cite {
+    font-size: 18px;
+    top: 30px;
+  }
+
+  /*Gallery Section*/
+
+  #gallery hr {
+    width: 20%;
+    position: relative;
+    left: 145px;
+    bottom: 29px;
+  }
+
+  #gallery .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .first-col-img img {
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .img-wrapper-first:hover svg.bi.bi-search {
+    left: 45%;
+    top: 40%;
+  }
+
+  .img-wrapper-row:hover svg.bi.bi-search {
+    left: 45%;
+    /* top: 10px; ???????????????? */
+  }
+
+  /*Footer Section*/
+
+  #footer ul.list-unstyled li {
+    font-size: 17px;
+  }
+
+  #footer ul.list-unstyled .rights {
+    font-size: 12px;
+  }
+
+  #footer ul.list-unstyled li a.navbar-brand {
+    font-size: 40px;
   }
 }
