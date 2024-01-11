@@ -35,8 +35,10 @@
       rel="stylesheet"
     />
     <!-- local css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style_1.css" />
+    <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
+    <link rel="stylesheet" href="css/responsive_1.css" />
+
     <link
       href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css"
       rel="stylesheet"
@@ -51,8 +53,8 @@
   </head>
   <body>
     <div>
-      <header class="container">
-        <nav class="navbar navbar-expand-md navbar-light bg-light px-5 py-2">
+      <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light container">
           <a class="navbar-brand" href="#"
             >Resto<span style="color: #f34949">..</span></a
           >
@@ -90,7 +92,7 @@
           </div>
         </nav>
       </header>
-      <section class="carousel-section">
+      <section class="carousel-section" id="carousel">
         <div
           id="carouselExampleIndicators"
           class="carousel slide carousel-fade"
@@ -199,13 +201,13 @@
       </section>
       <section class="menu-section container" id="menu">
         <div
-          class="the-menu d-flex border-top-3 flex-column align-items-center ps-3"
+          class="the-menu d-flex border-top-3 flex-column align-items-center"
         >
           <h6 class="menu">The Menu</h6>
           <span class="triangle"></span>
         </div>
         <div class="row menu-courses">
-          <div class="col-xs-1 col-xxl-6 menu-div one">
+          <div class="col-xs-1 col-xxl-6">
             <div class="row one">
               <div class="menu-course-info col-6">
                 <h5 class="menu-heading">Voluptate cillum fugiat.</h5>
@@ -243,7 +245,7 @@
               <div class="menu-price col-2"><b>$30</b></div>
             </div>
           </div>
-          <div class="col-xs-1 col-xxl-6 menu-div two padd">
+          <div class="col-xs-1 col-xxl-6">
             <div class="row">
               <div class="menu-course-info col-6">
                 <h5 class="menu-heading">Arcu pede enim justo.</h5>
@@ -284,7 +286,7 @@
             </div>
           </div>
         </div>
-        <div class="menu-btn col-xs-12">
+        <div class="menu-btn">
           <div class="row">
             <button class="menu-course-btn">
               View all menu |<i class="arrow down"></i>
@@ -301,9 +303,11 @@
         >
           <div class="subheading-wrapper">
             <div>
-              <h4>FEATURED DISHES</h4>
+              <h4>
+                FEATURED DISHES
+                <hr />
+              </h4>
             </div>
-            <div class="featured-dishes-line-hr"><hr /></div>
             <div class="featured carousel-indicators">
               <button
                 type="button"
@@ -974,17 +978,21 @@
           </div>
         </div>
       </section>
-      <section class="container about-us-section" id="about-us">
-        <div class="subheading-wrapper-about-us">
-          <div><h4>ABOUT US</h4></div>
-          <div class="about-us-line-hr"><hr /></div>
+      <section class="about-us-section container" id="about-us">
+        <div class="subheading-wrapper">
+          <div>
+            <h4>
+              ABOUT US
+              <hr />
+            </h4>
+          </div>
         </div>
-        <div class="heading-about-us container">
+        <div class="heading-about-us">
           <h1 style="font-weight: 100; letter-spacing: 2px">
             Todays restaurant is theater on a grand scale.
           </h1>
         </div>
-        <div class="info-about-us container row">
+        <div class="info-about-us row">
           <div class="first col-sm-12 col-md-6">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -1004,7 +1012,7 @@
             only five centuries, but also the leap into electronic typesetting
           </div>
         </div>
-        <div class="info-about-us list container row">
+        <div class="info-about-us list row">
           <div class="list col-sm-12 col-md-6">
             <ul>
               <p id="about-us-list-p"><b>It was popularised:</b></p>
@@ -1026,151 +1034,149 @@
           </div>
         </div>
       </section>
-      <section class="the-gallery-section" id="gallery">
-        <div class="container">
-          <div class="subheading-wrapper">
-            <div>
-              <h4>THE GALLERY</h4>
-            </div>
-            <div class="gallery-hr"><hr /></div>
+      <section class="the-gallery-section container mb-5" id="gallery">
+        <div class="subheading-wrapper">
+          <div>
+            <h4>
+              THE GALLERY
+              <hr />
+            </h4>
           </div>
-          <div class="gallery row container">
-            <div class="col-sm-12 col-md-4 col-xl-4">
-              <div class="img-wrapper-first">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="50"
-                  height="50"
-                  fill="#fff"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  />
-                </svg>
-                <a
-                  class="example-image-link"
-                  href="assets/gallery/v-gallery-1.jpg"
-                  data-lightbox="example-set"
-                  data-title="Click anywhere outside the image or the X to the right to close."
-                  ><img
-                    class="example-image"
-                    src="assets/gallery/v-gallery-1.jpg"
-                    alt=""
-                  />
-                </a>
-              </div>
+        </div>
+        <div class="row">
+          <div class="first-col-img col-sm-12 col-md-4 col-xl-4">
+            <div class="img-wrapper-first">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="#fff"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+              <a
+                class="example-image-link"
+                href="assets/gallery/v-gallery-1.jpg"
+                data-lightbox="example-set"
+                data-title="Click anywhere outside the image or the X to the right to close."
+                ><img
+                  class="example-image"
+                  src="assets/gallery/v-gallery-1.jpg"
+                  alt=""
+                />
+              </a>
             </div>
-
-            <div class="col-sm-12 col-md-4 col-xl-4">
-              <div class="img-wrapper">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="50"
-                  height="50"
-                  fill="#fff"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  />
-                </svg>
-                <a
-                  class="example-image-link"
-                  href="assets/gallery/h-gallery-4.jpg"
-                  data-lightbox="example-set"
-                  data-title="Or press the right arrow on your keyboard."
-                  ><img
-                    class="h-example-image"
-                    src="assets/gallery/h-gallery-4.jpg"
-                    alt=""
-                /></a>
-              </div>
-              <div class="img-wrapper">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="50"
-                  height="50"
-                  fill="#fff"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  />
-                </svg>
-                <a
-                  class="example-image-link"
-                  href="assets/gallery/h-gallery-3.jpg"
-                  data-lightbox="example-set"
-                  data-title="The next image in the set is preloaded as you're viewing."
-                  ><img
-                    class="h-example-image"
-                    src="assets/gallery/h-gallery-3.jpg"
-                    alt=""
-                /></a>
-              </div>
+          </div>
+          <div class="first-row-img col-sm-12 col-md-4 col-xl-4">
+            <div class="img-wrapper-row">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="#fff"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+              <a
+                class="example-image-link"
+                href="assets/gallery/h-gallery-4.jpg"
+                data-lightbox="example-set"
+                data-title="Or press the right arrow on your keyboard."
+                ><img
+                  class="h-example-image"
+                  src="assets/gallery/h-gallery-4.jpg"
+                  alt=""
+              /></a>
             </div>
-            <div class="col-sm-12 col-md-4 col-xl-4">
-              <div class="img-wrapper">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="50"
-                  height="50"
-                  fill="#fff"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  />
-                </svg>
-                <a
-                  class="example-image-link"
-                  href="assets/gallery/h-gallery-2.jpg"
-                  data-lightbox="example-set"
-                  data-title="Click anywhere outside the image or the X to the right to close."
-                  ><img
-                    class="h-example-image"
-                    src="assets/gallery/h-gallery-2.jpg"
-                    alt=""
-                /></a>
-              </div>
-              <div class="img-wrapper">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="50"
-                  height="50"
-                  fill="#fff"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  />
-                </svg>
-                <a
-                  class="example-image-link"
-                  href="assets/gallery/h-gallery-1.jpg"
-                  data-lightbox="example-set"
-                  data-title="Click anywhere outside the image or the X to the right to close."
-                  ><img
-                    class="h-example-image"
-                    src="assets/gallery/h-gallery-1.jpg"
-                    alt=""
-                /></a>
-              </div>
+            <div class="img-wrapper-row">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="#fff"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+              <a
+                class="example-image-link"
+                href="assets/gallery/h-gallery-3.jpg"
+                data-lightbox="example-set"
+                data-title="The next image in the set is preloaded as you're viewing."
+                ><img
+                  class="h-example-image"
+                  src="assets/gallery/h-gallery-3.jpg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="second-row-img col-sm-12 col-md-4 col-xl-4">
+            <div class="img-wrapper-row">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="#fff"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+              <a
+                class="example-image-link"
+                href="assets/gallery/h-gallery-2.jpg"
+                data-lightbox="example-set"
+                data-title="Click anywhere outside the image or the X to the right to close."
+                ><img
+                  class="h-example-image"
+                  src="assets/gallery/h-gallery-2.jpg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="img-wrapper-row">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="#fff"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+              <a
+                class="example-image-link"
+                href="assets/gallery/h-gallery-1.jpg"
+                data-lightbox="example-set"
+                data-title="Click anywhere outside the image or the X to the right to close."
+                ><img
+                  class="h-example-image"
+                  src="assets/gallery/h-gallery-1.jpg"
+                  alt=""
+              /></a>
             </div>
           </div>
         </div>
       </section>
-      <section class="back-to-top">
+      <!-- <section class="back-to-top">
         <div>
           <button id="scroll-to-top">
             <?xml version="1.0" encoding="iso-8859-1"?>
-            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
             <svg
               fill="#fff"
               height="25px"
@@ -1192,54 +1198,60 @@
             </svg>
           </button>
         </div>
-      </section>
-      <footer class="footer">
-        <div class="row mb-0 pb-0">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 footer-content">
-            <div class="container row">
-              <div class="col-sm-6 col-md-3 col-xl-3 mt-5 footer-col">
+      </section> -->
+      <footer class="footer" id="footer">
+        <footer class="text-center text-lg-start">
+          <div class="container pt-4 pb-4">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ps-0 pe-0 pt-3 pb-3">
                 <ul class="list-unstyled">
-                  <li><b>New York Restaurant</b></li>
+                  <li><b>New Yor Restaurant</b></li>
                   <li>3926 Anmoore Road</li>
                   <li>New York, NY 10014</li>
                   <li><b>718-749-1714</b></li>
                 </ul>
               </div>
-              <div class="col-sm-6 col-md-3 col-xl-3 mt-5 footer-col">
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ps-0 pe-0 pt-3 pb-3">
                 <ul class="list-unstyled">
                   <li><b>France Restaurant</b></li>
                   <li>68, rue de la Couronne</li>
                   <li>75002 PARIS</li>
+                  <li><b>02.94.23.69.56</b></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ps-0 pe-0 pt-3 pb-3">
+                <ul class="list-unstyled">
                   <li>
-                    <b>02.94.23.69.56</b>
+                    <a href="#" class="links">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#" class="links">Careers</a>
+                  </li>
+                  <li>
+                    <a href="#" class="links">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="links">Contact</a>
                   </li>
                 </ul>
               </div>
-              <div class="col-sm-6 col-md-3 col-xl-3 mt-5 footer-col">
-                <ul class="list-unstyled links">
-                  <li><b>Blog</b></li>
-                  <li><b>Careers</b></li>
-                  <li><b>Privacy Policy</b></li>
-                  <li><b>Contact</b></li>
-                </ul>
-              </div>
-              <div class="brand-col col-sm-6 col-md-3 col-xl-3 mt-5 footer-col">
-                <h5>
-                  <span>
-                    <a class="brand footer" href="#"
+              <div class="col-lg-3 col-md-6 ps-0 pe-0 pt-3 pb-3">
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="navbar-brand" style="color: #fff" href="#"
                       >Resto<span style="color: #f34949">..</span></a
-                    ><br />
-                    <small>&#9400; All Rights Reserved.</small><br /><small
-                      class="copy-rights"
-                      >Find more on
-                      <b class="pixel-hunt">PixelHunt.com</b></small
-                    ><br />
-                  </span>
-                </h5>
+                    >
+                  </li>
+                  <li class="rights">© All Rights Reserved 2014.</li>
+                  <li class="rights">
+                    Find More at
+                    <span class="pixelhint-link">Pixelhint.com</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
+        </footer>
       </footer>
     </div>
     <!-- jQuery -->

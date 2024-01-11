@@ -1,0 +1,194 @@
+@media screen and (max-width: 576.99px) {
+  .subheading-wrapper h4 {
+    font-size: 15px;
+  }
+  /*Navbar Section*/
+
+  a.navbar-brand {
+    font-size: 20px;
+    padding: var(--bs-navbar-toggler-padding-y)
+      var(--bs-navbar-toggler-padding-x);
+  }
+
+  a.nav-link {
+    font-size: 10px;
+  }
+
+  span.navbar-toggler-icon {
+    width: 20px;
+    height: 30px;
+  }
+
+  /*Carousel Section*/
+
+  #carousel .heading {
+    font-size: 20px;
+  }
+
+  #carousel .description {
+    font-size: 8px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 5px;
+    height: 5px;
+  }
+
+  /*Menu Section*/
+
+  .menu {
+    font-size: 10px;
+    padding: 10px 10px 15px 10px;
+  }
+
+  .triangle {
+    top: 30px;
+  }
+
+  .menu-courses {
+    margin-top: 15%;
+  }
+
+  .menu-heading,
+  .menu-price {
+    font-size: 17px;
+  }
+
+  .menu-description {
+    font-size: 10px;
+  }
+
+  .menu-btn {
+    margin-bottom: 25%;
+  }
+
+  .menu-course-btn {
+    font-size: 10px;
+    padding: 5px 20px 5px 7px;
+  }
+
+  .arrow {
+    border-width: 0 1px 1px 0;
+    bottom: 1px;
+  }
+
+  /*Featured dishes Section*/
+
+  #dishes hr {
+    width: 30%;
+    left: 135px;
+    bottom: 25px;
+  }
+
+  .card {
+    margin-bottom: 10%;
+  }
+  .card-body {
+    padding: 0;
+  }
+
+  .card-img-top {
+    height: 100px;
+  }
+
+  .course-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .course-name,
+  .course-price {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+
+  .course-name,
+  .course-price {
+    padding: 0px 2px;
+  }
+
+  .course-likes-num {
+    font-size: 8px;
+  }
+
+  svg.heart {
+    width: 10px;
+    height: 10px;
+  }
+
+  /*About us Section*/
+
+  #about-us {
+    margin-bottom: 10%;
+  }
+
+  #about-us hr {
+    width: 10%;
+    position: relative;
+    left: 80px;
+    bottom: 25px;
+  }
+
+  .heading-about-us h1 {
+    font-size: 25px;
+  }
+
+  .info-about-us {
+    font-size: 10px;
+  }
+
+  blockquote:before {
+    font-size: 60px;
+    top: 20px;
+  }
+
+  blockquote:after {
+    font-size: 60px;
+    top: 30px;
+  }
+
+  cite {
+    font-size: 10px;
+    top: 30px;
+  }
+
+  /*Gallery Section*/
+
+  #gallery hr {
+    width: 10%;
+    position: relative;
+    left: 110px;
+    bottom: 25px;
+  }
+
+  #gallery .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .first-col-img img {
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .img-wrapper-first:hover svg.bi.bi-search {
+    left: 45%;
+    top: 40%;
+  }
+
+  .img-wrapper-row:hover svg.bi.bi-search {
+    left: 40%;
+    /* top: 10px; ???????????????? */
+  }
+
+  /*Footer Section*/
+
+  #footer ul.list-unstyled li {
+    font-size: 12px;
+  }
+
+  #footer ul.list-unstyled .rights {
+    font-size: 8px;
+  }
+}
