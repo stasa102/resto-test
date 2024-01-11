@@ -34,7 +34,7 @@ $("header nav a").on("click", function (e) {
   $("html, body").animate({ scrollTop: $(href).offset().top }, 500);
 });
 
-//
+//Hamburger Menu
 
 $("button").on("click", function () {
   $(this).toggleClass("is-active");
