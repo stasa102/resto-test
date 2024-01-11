@@ -17,7 +17,12 @@ html {
   background-color: transparent !important;
 }
 
-/* section: Navbar */
+.subheading-wrapper h4 {
+  font-family: var(--cormorantFont);
+  font-weight: bolder;
+}
+
+/* Navbar Section */
 .navbar-brand {
   font-family: var(--styleScriptFont);
   font-weight: 600;
@@ -25,6 +30,7 @@ html {
   font-stretch: expanded;
   letter-spacing: 3px;
   color: #424141;
+  font-size: 60px;
 }
 
 .navbar-collapse {
@@ -43,6 +49,7 @@ a.nav-link {
   margin-top: 5px;
   display: inline;
   color: var(--lighterGrey);
+  font-size: 25px;
 }
 
 a.nav-link:hover {
@@ -69,7 +76,7 @@ a.nav-link:hover {
   border: 0;
 }
 
-/**/
+/* Carousel image-slider Section*/
 
 .carousel-section img {
   border-bottom: 5px solid var(--orange);
@@ -80,12 +87,12 @@ a.nav-link:hover {
 .carousel-indicators [data-bs-target] {
   width: 10px;
   height: 10px;
-  background-color: #c3c3c3;
+  background-color: var(--lightestGrey);
   opacity: 0.5;
 }
 
 .carousel-indicators .active {
-  background-color: #f34949;
+  background-color: var(--orange);
   opacity: 1;
 }
 
@@ -97,7 +104,7 @@ a.nav-link:hover {
   border-radius: 100%;
 }
 
-/**/
+/* Carousel - Text over*/
 
 .heading,
 .description {
@@ -113,8 +120,9 @@ a.nav-link:hover {
 .heading {
   font-family: var(--styleScriptFont);
   font-weight: 600;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, -50%);
+  font-size: 90px;
 }
 .description::before,
 .description::after {
@@ -124,10 +132,11 @@ a.nav-link:hover {
 .description {
   font-family: var(--cormorantFont);
   font-weight: 600;
-  top: 70%;
+  top: 60%;
+  font-size: 20px;
 }
 
-/**/
+/*Menu Section*/
 
 .menu {
   font-family: var(--cormorantFont);
@@ -162,12 +171,12 @@ a.nav-link:hover {
 .menu-price {
   font-weight: bold;
   font-family: var(--cormorantFont);
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .menu-description {
   font-family: var(--diphylleiaFont);
-  font-size: 18px;
+  font-size: 14px;
   font-style: italic;
   color: var(--lighterGrey);
 }
@@ -203,7 +212,7 @@ a.nav-link:hover {
   justify-content: center;
 }
 
-/**/
+/*Featured dishes Section*/
 
 #dishes .subheading-wrapper {
   display: flex;
@@ -211,9 +220,8 @@ a.nav-link:hover {
 }
 
 #dishes hr {
-  width: 20%;
   position: relative;
-  left: 215px;
+  left: 225px;
   bottom: 30px;
 }
 
@@ -227,12 +235,31 @@ a.nav-link:hover {
 .course-name,
 .course-price {
   font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.course-likes-num {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .card {
   margin: 0;
+  margin-bottom: 10%;
   --bs-card-border-radius: 0;
   --bs-card-border-color: transparent;
+}
+
+.card-body {
+  padding: 0;
+  margin-top: 5%;
 }
 
 .card-img-top {
@@ -277,9 +304,7 @@ a.nav-link:hover {
   fill: var(--orange);
 }
 
-/**/
-
-/*about-us-section */
+/*About us Section */
 
 #about-us {
   position: relative;
@@ -290,7 +315,7 @@ a.nav-link:hover {
 #about-us hr {
   width: 20%;
   position: relative;
-  left: 125px;
+  left: 135px;
   bottom: 30px;
 }
 
@@ -336,7 +361,6 @@ blockquote {
 
 blockquote:before,
 blockquote:after {
-  /* position: absolute; */
   color: var(--lightestGrey);
   font-size: 10rem;
   width: 10%;
@@ -360,21 +384,26 @@ blockquote:after {
 cite {
   display: flex;
   font-family: var(--diphylleiaFont);
+  font-size: 20px;
   line-height: 1.5;
   text-align: center;
   position: relative;
+  left: 5%;
   top: 10%;
 }
 
-/**/
-.subheading-wrapper h4 {
-  font-family: var(--cormorantFont);
-  font-weight: bolder;
+/*Gallery Section*/
+
+#gallery .row {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 15%;
 }
+
 #gallery hr {
   width: 20%;
   position: relative;
-  left: 160px;
+  left: 170px;
   bottom: 30px;
 }
 .first-col-img {
@@ -438,7 +467,7 @@ svg.bi.bi-search {
   top: 45%;
 }
 
-/**/
+/*Scroll-to-top-Btn Section*/
 
 #scroll-to-top {
   position: fixed;
@@ -457,7 +486,7 @@ svg.bi.bi-search {
   background-color: var(--orange);
 }
 
-/**/
+/*Footer Section*/
 
 .footer {
   background-color: #424141;
@@ -473,6 +502,9 @@ svg.bi.bi-search {
 .list-unstyled a.links {
   text-decoration: none;
   color: var(--white);
+}
+#footer a.navbar-brand {
+  font-size: 45px;
 }
 
 .list-unstyled a.links:hover {
