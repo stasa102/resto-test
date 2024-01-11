@@ -320,9 +320,9 @@ a.nav-link:hover {
 }
 
 #about-us .first hr.about-us-hr {
-  width: 93%;
+  width: 100%;
   position: relative;
-  top: 5px;
+  top: 40px;
   left: 0%;
 }
 
@@ -379,12 +379,13 @@ blockquote:after {
   position: relative;
   float: right;
   top: 15%;
+  left: 30px;
 }
 
 cite {
   display: flex;
   font-family: var(--diphylleiaFont);
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.5;
   text-align: center;
   position: relative;
@@ -471,8 +472,8 @@ svg.bi.bi-search {
 
 #scroll-to-top {
   position: fixed;
-  bottom: 40px;
-  right: 50px;
+  bottom: 10px;
+  right: 10px;
   padding: 20px;
   border: none;
   border-radius: 100%;
@@ -482,8 +483,11 @@ svg.bi.bi-search {
   display: none;
   z-index: 50;
 }
+
 #scroll-to-top:hover {
-  background-color: var(--orange);
+  background-color: #cf4c4c;
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
 }
 
 /*Footer Section*/

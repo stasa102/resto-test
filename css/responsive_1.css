@@ -119,6 +119,10 @@
     bottom: 25px;
   }
 
+  #about-us .first hr.about-us-hr {
+    top: 10px;
+  }
+
   .heading-about-us h1 {
     font-size: 25px;
   }
@@ -154,6 +158,18 @@
   .first-col-img img {
     height: 250px;
     overflow: hidden;
+  }
+
+  /*Scroll to top Section*/
+
+  #scroll-to-top {
+    padding: 10px;
+  }
+
+  svg#Layer_1 {
+    height: 15px;
+    width: 25px;
+    margin-bottom: 2px;
   }
 
   /*Footer Section*/
@@ -280,6 +296,10 @@
     bottom: 30px;
   }
 
+  #about-us .first hr.about-us-hr {
+    top: 15px;
+  }
+
   .heading-about-us h1 {
     font-size: 32px;
   }
@@ -321,6 +341,18 @@
   .first-col-img img {
     height: 250px;
     overflow: hidden;
+  }
+
+  /*Scroll to top Section*/
+
+  #scroll-to-top {
+    padding: 14px;
+  }
+
+  svg#Layer_1 {
+    height: 18px;
+    width: 25px;
+    margin-bottom: 2px;
   }
   /*Footer Section*/
 
@@ -486,6 +518,18 @@
     bottom: 29px;
   }
 
+  /*Scroll to top Section*/
+
+  #scroll-to-top {
+    padding: 18px;
+  }
+
+  svg#Layer_1 {
+    height: 20px;
+    width: 25px;
+    margin-bottom: 2px;
+  }
+
   /*Footer Section*/
 
   #footer ul.list-unstyled li {
@@ -604,5 +648,12 @@
     bottom: 37px;
   }
 
-  /*Footer Section*/
+  /*Gallery Section*/
+
+  #gallery hr {
+    width: 20%;
+    position: relative;
+    left: 255px;
+    bottom: 37px;
+  }
 }
