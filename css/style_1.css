@@ -3,6 +3,7 @@
   --lighterGrey: #565656;
   --lightestGrey: #cccccc;
   --white: #ffffff;
+  --black: #000000;
   --styleScriptFont: "Style Script", cursive;
   --cormorantFont: "Cormorant", serif;
   --diphylleiaFont: "Diphylleia", serif;
@@ -19,7 +20,9 @@ html {
 
 .subheading-wrapper h4 {
   font-family: var(--cormorantFont);
-  font-weight: bolder;
+  color: var(--black);
+  font-weight: bold;
+  font-size: 35px;
 }
 
 /* Navbar Section */
@@ -217,13 +220,14 @@ button.is-active:after {
   font-weight: bold;
   font-family: var(--cormorantFont);
   font-size: 25px;
+  color: var(--lighterGrey);
 }
 
 .menu-description {
   font-family: var(--diphylleiaFont);
   font-size: 14px;
   font-style: italic;
-  color: var(--lighterGrey);
+  color: var(--lightestGrey);
 }
 
 .menu-course-btn {
@@ -265,9 +269,10 @@ button.is-active:after {
 }
 
 #dishes hr {
+  width: 60%;
   position: relative;
-  left: 225px;
-  bottom: 30px;
+  left: 325px;
+  bottom: 35px;
 }
 
 .featured-dishes-section {
@@ -355,13 +360,14 @@ button.is-active:after {
   position: relative;
   color: var(--lighterGrey);
   font-family: var(--cormorantFont);
+  margin-bottom: 10%;
 }
 
 #about-us hr {
   width: 20%;
   position: relative;
-  left: 135px;
-  bottom: 30px;
+  left: 205px;
+  bottom: 35px;
 }
 
 #about-us .first hr.about-us-hr {
@@ -430,12 +436,20 @@ blockquote:after {
 cite {
   display: flex;
   font-family: var(--diphylleiaFont);
-  font-size: 25px;
+  font-size: 30px;
   line-height: 1.5;
   text-align: center;
   position: relative;
-  left: 5%;
-  top: 10%;
+  top: 20%;
+}
+
+.info-about-us.row {
+  font-size: 22px;
+  text-align: justify;
+}
+
+.heading-about-us h1 {
+  font-size: 60px;
 }
 
 /*Gallery Section*/
@@ -449,8 +463,8 @@ cite {
 #gallery hr {
   width: 20%;
   position: relative;
-  left: 170px;
-  bottom: 30px;
+  left: 255px;
+  bottom: 35px;
 }
 .first-col-img {
   padding-right: 0;
@@ -492,6 +506,10 @@ div.col-xl-4 {
   position: relative;
 }
 
+.img-wrapper-row {
+  position: relative;
+}
+
 svg.bi.bi-search {
   z-index: 10;
   position: absolute;
@@ -509,8 +527,12 @@ svg.bi.bi-search {
 }
 
 .img-wrapper-first:hover svg.bi.bi-search {
-  left: 40%;
-  top: 45%;
+  left: 45%;
+  top: 42%;
+}
+.img-wrapper-row:hover svg.bi.bi-search {
+  left: 45%;
+  top: 40%;
 }
 
 /*Scroll-to-top-Btn Section*/

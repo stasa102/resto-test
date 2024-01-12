@@ -5,13 +5,13 @@
   /*Navbar Section*/
 
   a.navbar-brand {
-    font-size: 20px;
+    font-size: 22px;
     padding: var(--bs-navbar-toggler-padding-y)
       var(--bs-navbar-toggler-padding-x);
   }
 
   a.nav-link {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   span.navbar-toggler-icon {
@@ -19,9 +19,9 @@
     height: 30px;
   }
 
-  /* .navbar-toggler {
+  .navbar-toggler {
     right: 15px;
-  } */
+  }
 
   /*Carousel Section*/
 
@@ -81,7 +81,7 @@
   /*Featured dishes Section*/
 
   #dishes hr {
-    width: 30%;
+    width: 40%;
     left: 145px;
     bottom: 25px;
   }
@@ -127,12 +127,12 @@
     top: 10px;
   }
 
-  .heading-about-us h1 {
-    font-size: 25px;
+  .info-about-us.row {
+    font-size: 13px;
   }
 
-  .info-about-us {
-    font-size: 12px;
+  .heading-about-us h1 {
+    font-size: 25px;
   }
 
   blockquote:before {
@@ -203,6 +203,10 @@
 
   a.nav-link {
     font-size: 15px;
+  }
+
+  .navbar-toggler {
+    right: 15px;
   }
 
   /*Carousel Section*/
@@ -304,6 +308,10 @@
     top: 15px;
   }
 
+  .info-about-us.row {
+    font-size: 15px;
+  }
+
   .heading-about-us h1 {
     font-size: 32px;
   }
@@ -391,12 +399,12 @@
   /*Carousel Section*/
 
   #carousel .heading {
-    font-size: 40px;
+    font-size: 45px;
     top: 50%;
   }
 
   #carousel .description {
-    font-size: 15px;
+    font-size: 20px;
     top: 60%;
   }
 
@@ -480,13 +488,12 @@
     top: 10px;
     left: 0%;
   }
+  .info-about-us.row {
+    font-size: 17px;
+  }
 
   .heading-about-us h1 {
     font-size: 35px;
-  }
-
-  .info-about-us {
-    font-size: 15px;
   }
 
   .info-about-us .list {
@@ -505,11 +512,12 @@
   blockquote:after {
     font-size: 100px;
     top: 40px;
+    left: 0;
   }
 
   cite {
-    font-size: 20px;
-    top: 40px;
+    font-size: 18px;
+    top: 35px;
     left: 0%;
   }
 
@@ -550,6 +558,9 @@
 }
 
 @media screen and (min-width: 1140px) and (max-width: 1262px) {
+  .subheading-wrapper h4 {
+    font-size: 35px;
+  }
   .heading {
     font-size: 60px;
     top: 50%;
@@ -562,17 +573,50 @@
   /*Featured dishes section*/
   #dishes hr {
     width: 80%;
-    left: 230px;
-    bottom: 30px;
+    left: 320px;
+    bottom: 35px;
   }
 
   /*About-us Section*/
 
+  .info-about-us.row {
+    font-size: 17px;
+  }
+
   #about-us hr {
     width: 20%;
     position: relative;
-    left: 140px;
-    bottom: 32px;
+    left: 190px;
+    bottom: 35px;
+  }
+
+  .heading-about-us h1 {
+    font-size: 45px;
+  }
+
+  .info-about-us.row {
+    font-size: 17px;
+  }
+
+  .blockquote {
+    margin-top: 2%;
+  }
+
+  blockquote:before {
+    font-size: 100px;
+    top: 15px;
+  }
+
+  blockquote:after {
+    font-size: 100px;
+    top: 40px;
+    left: 0;
+  }
+
+  cite {
+    font-size: 20px;
+    top: 50px;
+    left: 0%;
   }
 
   /*Gallery Section*/
@@ -580,8 +624,8 @@
   #gallery hr {
     width: 20%;
     position: relative;
-    left: 175px;
-    bottom: 29px;
+    left: 255px;
+    bottom: 35px;
   }
 
   /*Footer Section*/
@@ -591,6 +635,9 @@
   }
 }
 @media screen and (min-width: 1262px) and (max-width: 1440px) {
+  .subheading-wrapper h4 {
+    font-size: 35px;
+  }
   .heading {
     font-size: 70px;
     top: 50%;
@@ -602,8 +649,8 @@
   /*Featured dishes section*/
   #dishes hr {
     width: 80%;
-    left: 230px;
-    bottom: 30px;
+    left: 325px;
+    bottom: 37px;
   }
 
   /*About-us Section*/
@@ -611,8 +658,37 @@
   #about-us hr {
     width: 20%;
     position: relative;
-    left: 140px;
-    bottom: 31px;
+    left: 195px;
+    bottom: 35px;
+  }
+
+  .info-about-us.row {
+    font-size: 17px;
+  }
+
+  .heading-about-us h1 {
+    font-size: 45px;
+  }
+
+  .blockquote {
+    margin-top: 2%;
+  }
+
+  blockquote:before {
+    font-size: 100px;
+    top: 15px;
+  }
+
+  blockquote:after {
+    font-size: 100px;
+    top: 40px;
+    left: 0;
+  }
+
+  cite {
+    font-size: 20px;
+    top: 50px;
+    left: 0%;
   }
 
   /*Gallery Section*/
@@ -620,8 +696,8 @@
   #gallery hr {
     width: 20%;
     position: relative;
-    left: 175px;
-    bottom: 29px;
+    left: 255px;
+    bottom: 35px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1620px) {
@@ -650,6 +726,18 @@
     position: relative;
     left: 190px;
     bottom: 37px;
+  }
+
+  .info-about-us.row {
+    font-size: 19px;
+  }
+
+  .heading-about-us h1 {
+    font-size: 50px;
+  }
+
+  cite {
+    font-size: 25px;
   }
 
   /*Gallery Section*/
